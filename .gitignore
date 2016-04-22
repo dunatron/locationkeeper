@@ -17,3 +17,5 @@ favicon.ico
 framework/
 install-frameworkmissing.html
 install.php
+themes/keeper/.gitignore
+themes/keeper/node_modules/
