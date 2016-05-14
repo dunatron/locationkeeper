@@ -18,8 +18,4 @@ install-frameworkmissing.html
 install.php
 themes/keeper/.gitignore
 themes/keeper/node_modules/
-/siteconfig/
-web.config
-index.php
-/reports/
-/.idea/
+
