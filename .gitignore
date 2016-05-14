@@ -10,7 +10,6 @@ _ss_environment.php
 # ignore composer vendor folder
 /vendor/
 .editorconfig
-.editorconfig
 assets/
 cms/
 favicon.ico
@@ -19,3 +18,8 @@ install-frameworkmissing.html
 install.php
 themes/keeper/.gitignore
 themes/keeper/node_modules/
+/siteconfig/
+web.config
+index.php
+/reports/
+/.idea/
