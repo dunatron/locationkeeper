@@ -47,6 +47,15 @@
                         <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>
+                        <% if CurrentMember %>
+                            <% loop CurrentMember %>
+                                <li><h2 id="current-member">$Name</h2></li>
+                                <li><a href="$Link">Edit Profile <i class="fa fa-pencil-square-o"></i></a></li>
+                                <li><a href="Security/logout">Log - Out <i class="fa fa-sign-out"></i></a></li>
+                            <% end_loop %>
+                        <% else %>
+                            <li><a  href="" role="button"  data-toggle="modal" data-target="#LoginOnBoardModal">Log - In<i class="fa fa-sign-in"></i></a></li>
+                        <% end_if %>
                     </ul>
                 </li>
             </ul>
