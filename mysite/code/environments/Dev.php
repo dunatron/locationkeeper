@@ -10,10 +10,7 @@ class Dev extends DataObject
 {
 
     private static $db = array(
-        'ServerName' => 'Text',
         'ServerAddress' => 'Varchar(100)',
-        'ServerUser' => 'Varchar(100)',
-        'ServerPass' => 'Varchar(100)',
         'SiteURL' => 'Text',
         'BackEndAddress' => 'Text',
         'BackEndUser' => 'Text',
@@ -24,24 +21,56 @@ class Dev extends DataObject
         'ProjectPage' => 'ProjectPage'
     );
 
-
-
-
-    public function updateCMSFields()
+    public function getCMSFields()
     {
-        $fields = FieldList::create(
-            TextField::create('ServerName'),
-            TextField::create('ServerAddress'),
-            TextField::create('ServerUser'),
-            TextField::create('ServerPass'),
-            TextField::create('SiteURL'),
-            TextField::create('BackEndAddress'),
-            TextField::create('BackEndUser'),
-            TextField::create('BackEndPass')
-
-        );
+        $fields = parent::getCMSFields();
+        $fields->addFieldToTab('Root.Main', new DropdownField(
+            'ServerAddress',
+            'Choose A Server',
+            Server::get()->map('ID', 'ServerAddress')->toArray(),
+            null,
+            true
+        ), 'SiteURL');
 
         return $fields;
+
+    }
+
+    public function GetServer()
+    {
+        $server = Server::get()->filter(array(
+            'ID' => $this->ServerAddress
+        ));
+        return $server;
+    }
+
+    public function GetServerID()
+    {
+        $serverID = 0;
+        $server = Server::get()->filter(array(
+            'ID' => $this->ServerAddress
+        ));
+        foreach ($server as $s)
+        {
+            $serverID = $s->ID;
+        }
+        return $serverID;
+    }
+
+    public function MakeSSH()
+    {
+        $sshString = 'ssh ';
+        $server = Server::get()->byID($this->GetServerID());
+        foreach ($server as $s)
+        {
+            $sshString .= $s->DevSSHUser;
+            $sshString .= '@';
+            $sshString .= $s->ServerAddress;
+            $sshString .= ' | ';
+            $sshString .= $s->DevSSHPass;
+
+        }
+        return $sshString;
     }
 
 }

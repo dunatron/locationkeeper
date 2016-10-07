@@ -1,36 +1,71 @@
-
-
 <div class="container">
 
     <% loop $UatEnvironments %>
-        <h2>$ServerName</h2>
-        <h2>$makeSSH</h2>
-        <p>description about this environment / current state</p>
+
+        <%-- SSH String --%>
+        $MakeSSH
+
         <table class="table table-hover">
             <thead>
                 <%-- Server Name --%>
             <tr>
                 <th>Server Name</th>
-                <th>$ServerName</th>
+                <th>
+                    <% loop $GetServer %>
+                        $ServerName
+                    <% end_loop %>
+                </th>
             </tr>
             </thead>
             <tbody>
                 <%-- Server Address --%>
             <tr>
                 <td>Server Address</td>
-                <td>$ServerAddress</td>
+                <td>
+                    <% loop $GetServer %>
+                        $ServerAddress
+                    <% end_loop %>
+                </td>
 
             </tr>
-                <%-- Server User --%>
+                <%-- Server Dev User --%>
             <tr>
-                <td>Server User</td>
-                <td>$ServerUser</td>
+                <td>Server Dev User</td>
+                <td>
+                    <% loop $GetServer %>
+                        $DevSSHUser
+                    <% end_loop %>
+                </td>
 
             </tr>
-                <%-- Server Password --%>
+                <%-- Server Dev Password --%>
             <tr>
-                <td>Server Password</td>
-                <td>$ServerPass</td>
+                <td>Server Dev Password</td>
+                <td>
+                    <% loop $GetServer %>
+                        $DevSSHPass
+                    <% end_loop %>
+                </td>
+
+            </tr>
+                <%-- Server Root User --%>
+            <tr>
+                <td>Server Root User</td>
+                <td>
+                    <% loop $GetServer %>
+                        $RootSSHUser
+                    <% end_loop %>
+                </td>
+
+            </tr>
+                <%-- Server Root Password --%>
+            <tr>
+                <td>Server Root Password</td>
+                <td>
+                    <% loop $GetServer %>
+                        $RootSSHPass
+                    <% end_loop %>
+                </td>
 
             </tr>
                 <%-- Site URL --%>
