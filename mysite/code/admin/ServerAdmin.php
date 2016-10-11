@@ -9,7 +9,7 @@ class ServerAdmin extends ModelAdmin
     /**
      * @var array
      */
-    private static $managed_models = array('Server');
+    private static $managed_models = array('Server', 'CMSType');
 
     /**
      * @var string

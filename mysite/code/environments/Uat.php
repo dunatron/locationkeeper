@@ -29,11 +29,40 @@ class Uat extends DataObject
         $fields->addFieldToTab('Root.Main', new DropdownField(
             'ServerAddress',
             'Choose A Server',
-            Server::get()->map('ID', 'ServerAddress')->toArray(),
+            Server::get()->map('ID', 'NameAddress')->toArray(),
             null,
             true
         ), 'SiteURL');
         return $fields;
+    }
+
+    /**
+     * Environment Summary
+     */
+    private static $summary_fields = array(
+        'SiteURL' => 'SiteURL',
+        'CWPCheck' => 'Is this CWP',
+        'ServerSummary' => 'Server Name + Address',
+    );
+
+    public function getServerByID()
+    {
+        $server = DataObject::get_by_id('Server', $this->ServerAddress);
+        return $server;
+    }
+
+    public function ServerSummary()
+    {
+        $server = $this->getServerByID();
+        $fullName = $server->ServerFullName();
+        return $fullName;
+    }
+
+    public function CWPCheck()
+    {
+        $server = $this->getServerByID();
+        $isset = $server->isCWPEnvironment();
+        return $isset;
     }
 
     public function GetServer()

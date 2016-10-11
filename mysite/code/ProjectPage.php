@@ -12,8 +12,8 @@ class ProjectPage extends Page {
 
     private static $db = array(
         'ProjectName' => 'Text',
-        'Client' => 'Text'
-
+        'Client' => 'Text',
+        'CMS' => 'Text'
     );
 
     private static $has_many = array(
@@ -24,12 +24,27 @@ class ProjectPage extends Page {
         'Keys' => 'Key'
     );
 
+    public function getCMSType()
+    {
+        $framework = DataObject::get_by_id('CMSType', $this->CMS);
+        return $framework;
+    }
+
 
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
         $fields->addFieldToTab('Root.Main', TextField::create('ProjectName', 'Name of the project'), 'Content');
         $fields->addFieldToTab('Root.Main', TextField::create('Client', 'Who is the project for'), 'Content');
+
+        // Hook CMSType DataObject
+        $fields->addFieldToTab('Root.Main', new DropdownField(
+            'CMS',
+            'What CMS does this site use',
+            CMSType::get()->map('ID', 'CMSName')->toArray(),
+            null,
+            true
+        ), 'ProjectName');
 
         $fields->addFieldToTab('Root.Dev', GridField::create(
             'Dev Environment',

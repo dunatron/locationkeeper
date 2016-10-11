@@ -3,6 +3,11 @@
 <div class="container">
 
     <% loop $DevEnvironments %>
+
+
+        <%-- Server Summary --%>
+        $ServerSummary
+
         <h2>$ServerName</h2>
 
 
