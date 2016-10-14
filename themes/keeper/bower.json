@@ -1,0 +1,21 @@
+{
+  "name": "keeper",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dunatron <heath.dunlop@samdog.nz>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dunatron/locationkeeper",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
