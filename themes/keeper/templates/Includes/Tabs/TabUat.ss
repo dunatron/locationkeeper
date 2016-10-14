@@ -2,8 +2,16 @@
 
     <% loop $UatEnvironments %>
 
-        <%-- SSH String --%>
-        $MakeSSH
+
+
+        <% if $CWPCheck == 'YES' %>
+            <h3>Server is on cwp and requires you to log into <a href="https://deploy.cwp.govt.nz" target="_blank">Deployonaught</a> </h3>
+        <% else %>
+            <%-- SSH String --%>
+            $MakeSSH
+        <% end_if %>
+
+
 
         <table class="table table-hover">
             <thead>
@@ -71,7 +79,7 @@
                 <%-- Site URL --%>
             <tr>
                 <td>Site URL</td>
-                <td>$SiteURL</td>
+                <td class="site-url">$SiteURL</td>
 
             </tr>
                 <%-- Htaccess User --%>

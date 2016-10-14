@@ -23,6 +23,7 @@
         <li><a data-toggle="tab" href="#menu3">LIVE</a></li>
         <li><a data-toggle="tab" href="#menu4">EXTRAS</a></li>
         <li><a data-toggle="tab" href="#menu5">KEYS</a></li>
+        <li><a data-toggle="tab" href="#menu6">GIT</a></li>
     </ul>
 
     <div class="tab-content">
@@ -49,6 +50,10 @@
         <div id="menu5" class="tab-pane fade">
             <h3>Keys</h3>
             <% include TabKeys %>
+        </div>
+        <div id="menu6" class="tab-pane fade">
+            <h3>Git</h3>
+            <% include TabGit %>
         </div>
     </div>
 </div>
