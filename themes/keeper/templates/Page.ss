@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <% base_tag %>
     <!-- Site made with Mobirise Website Builder v1.9.10, http://mobirise.com -->
     <meta charset="UTF-8">
@@ -17,8 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="$ThemeDir/css/base-styles.css" />
-
+    <link rel="stylesheet" type="text/css" href="$ThemeDir/public/css/app.css" />
 
 </head>
 <body>
