@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#"><img class="img-responsive" src="$SiteConfig.SiteLogo.URL"> </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,18 +18,18 @@
                     <li><a class="$LinkingMode" href="$Link" title="$Go to the $Title page">$MenuTitle</a></li>
                 <% end_loop %>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
+                <%--<li class="dropdown">--%>
+                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>--%>
+                    <%--<ul class="dropdown-menu">--%>
+                        <%--<li><a href="#">Action</a></li>--%>
+                        <%--<li><a href="#">Another action</a></li>--%>
+                        <%--<li><a href="#">Something else here</a></li>--%>
+                        <%--<li role="separator" class="divider"></li>--%>
+                        <%--<li><a href="#">Separated link</a></li>--%>
+                        <%--<li role="separator" class="divider"></li>--%>
+                        <%--<li><a href="#">One more separated link</a></li>--%>
+                    <%--</ul>--%>
+                <%--</li>--%>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
@@ -37,28 +37,6 @@
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <% if CurrentMember %>
-                            <% loop CurrentMember %>
-                                <li><h2 id="current-member">$Name</h2></li>
-                                <li><a href="$Link">Edit Profile <i class="fa fa-pencil-square-o"></i></a></li>
-                                <li><a href="Security/logout">Log - Out <i class="fa fa-sign-out"></i></a></li>
-                            <% end_loop %>
-                        <% else %>
-                            <li><a  href="" role="button"  data-toggle="modal" data-target="#LoginOnBoardModal">Log - In<i class="fa fa-sign-in"></i></a></li>
-                        <% end_if %>
-                    </ul>
-                </li>
-            </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

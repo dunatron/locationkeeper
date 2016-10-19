@@ -1,0 +1,51 @@
+.tab-content {
+  // General for tabs (individual tab css included further down)
+  margin-top: 20px;
+  .tab-pane {
+    .tab-title{
+      color: $c_samdog_orange;
+    }
+  }
+
+  .cwp-instance {
+    font-size: 14px;
+    font-family: $font_GustanMedium;
+  }
+  // General style for the tables
+  .table {
+    thead {
+      tr {
+        th {
+
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+        }
+        .site-url {
+          color: $c_samdog_green;
+        }
+        .site-backend-url {
+          color: $c_samdog_red;
+        }
+        .backend-user {
+          color: $c_samdog_orange;
+        }
+        .backend-pass {
+          color: $c_samdog_orange;
+        }
+      }
+    }
+  }
+
+  // pull out into individual sass files and include them here
+  // Notes
+  @import "content-tabs/notes-tab";
+  // dev
+  @import "content-tabs/dev-tab";
+  // uat
+  @import "content-tabs/uat-tab";
+}

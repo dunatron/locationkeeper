@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6d73f159f5c29eba4f330abe34b3b554",
-    "content-hash": "fbbba3ba186a8600fa4d87160622b4ff",
+    "hash": "e887adb98910585023d65e8c0a55433b",
+    "content-hash": "1d90626149a302e48e27a5c9e1e9e4d2",
     "packages": [
         {
             "name": "composer/installers",
@@ -313,6 +313,42 @@
                 "siteconfig"
             ],
             "time": "2016-02-24 03:06:04"
+        },
+        {
+            "name": "unclecheese/betterbuttons",
+            "version": "1.2.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
+                "reference": "8144382cfd8e457ec62c680663b7056eb5e85491"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/8144382cfd8e457ec62c680663b7056eb5e85491",
+                "reference": "8144382cfd8e457ec62c680663b7056eb5e85491",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Adds new form actions and buttons to GridField detail form for usability enhancements.",
+            "keywords": [
+                "buttons",
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2015-12-18 20:44:09"
         }
     ],
     "packages-dev": [

@@ -1,0 +1,97 @@
+// Beats typing these rules out each time
+@mixin show_psuedo{
+  content: '';
+  display: block;
+}
+
+// Clearfix.
+@mixin cf{
+  &:after{
+    @include show_psuedo;
+    clear: both;
+  }
+}
+
+@mixin background-cover-image{
+  width: 100%;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;              /* optional, center the image */
+}
+
+// position and size of on/off moble nav btns
+
+@mixin content {
+  h1 {
+
+  }
+  h2 {
+
+  }
+  h3 {
+
+  }
+  h4 {
+
+  }
+  p {
+
+  }
+  a {
+    &:hover {
+
+    }
+  }
+}
+
+@mixin wizi-content {
+  .important {
+    color: $c_samdog_red;
+  }
+  .green {
+    color: $c_samdog_green;
+  }
+  .UPPER-CASE {
+    text-transform: uppercase;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      font: normal 13px/20px helvetica, "san-serif";
+      position: relative; // note: contain psuedos'
+      // style caption below slider
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 550px;
+
+      // make a cross with css psuedos
+      &:before,
+      &:after{
+        @include show-psuedo;
+        position: absolute;
+        background-color: $c_samdog_green;
+      }
+
+      &:before{
+        width: 1px;
+        height: 7px;
+        left: 6px;
+        top: 9px;
+        margin-top: -4px;
+      }
+
+      &:after{
+        width: 7px;
+        height: 1px;
+        left: 3px;
+        top: 9px;
+        margin-top: -1px;
+      }
+    }
+  }
+}

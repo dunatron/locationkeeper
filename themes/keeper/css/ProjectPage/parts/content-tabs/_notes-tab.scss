@@ -1,0 +1,28 @@
+#notes {
+  .project-title {
+    color: $c_samdog_green;
+    margin-bottom: 0;
+  }
+  .cms-type {
+    color: $c_samdog_green;
+    font-family: $font_GustanLight;
+    margin-top: 0;
+  }
+
+  .important-title {
+    color: $c_samdog_green;
+    small {
+      font-family: $font_GustanLight;
+      color: $c_samdog_red;
+      font-size: 12px;
+    }
+  }
+
+  // Accordion
+  #note-accordion {
+    .note-body-wrapper {
+      padding: 15px;
+      @include wizi-content;
+    }
+  }
+}

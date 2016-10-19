@@ -6270,3 +6270,163 @@ button.close {
   border-color: gainsboro;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+@font-face {
+  font-family: 'GustanExtraBlack';
+  src: url("../../fonts/Gustan-Extrablack.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Gustan-Extrablack.eot?#iefix") format("embedded-opentype"), url("../../fonts/Gustan-Extrablack.woff") format("woff"), url("../../fonts/Gustan-Extrablack.ttf") format("truetype"), url("../../fonts/Gustan-Extrablack.svg#ef7d172b8931fe8869f98304ff6066f8") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'GustanLight';
+  src: url("../../fonts/Gustan-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Gustan-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Gustan-Light.woff") format("woff"), url("../../fonts/Gustan-Light.ttf") format("truetype"), url("../../fonts/Gustan-Light.svg#9d512dae6aa2a2ee232766b663faffd9") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'GustanMedium';
+  src: url("../../fonts/Gustan-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Gustan-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Gustan-Medium.woff") format("woff"), url("../../fonts/Gustan-Medium.ttf") format("truetype"), url("../../fonts/Gustan-Medium.svg#030fa3b6f6a5b4326fcb463078ac66e3") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'GustanMediumD';
+  src: url("../../fonts/Gustan-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Gustan-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Gustan-Medium.woff") format("woff"), url("../../fonts/Gustan-Medium.ttf") format("truetype"), url("../../fonts/Gustan-Medium.svg#030fa3b6f6a5b4326fcb463078ac66e3") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'GustanBold';
+  src: url("../../fonts/Gustan-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Gustan-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Gustan-Bold.woff") format("woff"), url("../../fonts/Gustan-Bold.ttf") format("truetype"), url("../../fonts/Gustan-Bold.svg#80e9b74cb0db71e7cd1b07c8182605f1") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+
+h2 {
+  font-family: GustanExtraBlack; }
+
+h3 {
+  font-family: GustanBold; }
+
+p {
+  font-family: GustanMedium; }
+
+a {
+  color: #4da7ca; }
+  a:hover {
+    color: #66AD28; }
+
+.navbar .navbar-header .navbar-brand {
+  padding: 0; }
+  .navbar .navbar-header .navbar-brand img {
+    height: 50px; }
+
+h1 {
+  color: #66AD28; }
+  h1 small {
+    color: #fbbc40;
+    font-size: 12px; }
+
+.ProjectPage .project-titles .project-name span {
+  color: #66AD28; }
+
+.ProjectPage .nav-tabs {
+  margin-top: 20px;
+  border-bottom: 1px solid #66AD28; }
+  .ProjectPage .nav-tabs li a {
+    border-radius: 0; }
+    .ProjectPage .nav-tabs li a:hover, .ProjectPage .nav-tabs li a:focus {
+      background-color: transparent; }
+  .ProjectPage .nav-tabs .active a {
+    color: #66AD28;
+    border-top: 1px solid #66AD28;
+    border-right: 1px solid #66AD28;
+    border-left: 1px solid #66AD28;
+    border-bottom: 1px solid #FFF; }
+    .ProjectPage .nav-tabs .active a:hover, .ProjectPage .nav-tabs .active a:focus {
+      color: #66AD28;
+      border-top: 1px solid #66AD28;
+      border-right: 1px solid #66AD28;
+      border-left: 1px solid #66AD28;
+      border-bottom: 1px solid #FFF; }
+
+.ProjectPage .tab-content {
+  margin-top: 20px; }
+  .ProjectPage .tab-content .tab-pane .tab-title {
+    color: #fbbc40; }
+  .ProjectPage .tab-content .cwp-instance {
+    font-size: 14px;
+    font-family: GustanMedium; }
+  .ProjectPage .tab-content .table tbody tr .site-url {
+    color: #66AD28; }
+  .ProjectPage .tab-content .table tbody tr .site-backend-url {
+    color: #f0523f; }
+  .ProjectPage .tab-content .table tbody tr .backend-user {
+    color: #fbbc40; }
+  .ProjectPage .tab-content .table tbody tr .backend-pass {
+    color: #fbbc40; }
+  .ProjectPage .tab-content #notes .project-title {
+    color: #66AD28;
+    margin-bottom: 0; }
+  .ProjectPage .tab-content #notes .cms-type {
+    color: #66AD28;
+    font-family: GustanLight;
+    margin-top: 0; }
+  .ProjectPage .tab-content #notes .important-title {
+    color: #66AD28; }
+    .ProjectPage .tab-content #notes .important-title small {
+      font-family: GustanLight;
+      color: #f0523f;
+      font-size: 12px; }
+  .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper {
+    padding: 15px; }
+    .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper .important {
+      color: #f0523f; }
+    .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper .green {
+      color: #66AD28; }
+    .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper .UPPER-CASE {
+      text-transform: uppercase; }
+    .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper ul {
+      padding: 0; }
+      .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper ul li {
+        list-style: none;
+        font: normal 13px/20px helvetica, "san-serif";
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 550px; }
+        .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper ul li:before, .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper ul li:after {
+          content: '';
+          display: block;
+          position: absolute;
+          background-color: #66AD28; }
+        .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper ul li:before {
+          width: 1px;
+          height: 7px;
+          left: 6px;
+          top: 9px;
+          margin-top: -4px; }
+        .ProjectPage .tab-content #notes #note-accordion .note-body-wrapper ul li:after {
+          width: 7px;
+          height: 1px;
+          left: 3px;
+          top: 9px;
+          margin-top: -1px; }
+  .ProjectPage .tab-content #dev {
+    margin-top: 20px; }
+    .ProjectPage .tab-content #dev .server-summary {
+      font-size: 20px; }
+  .ProjectPage .tab-content #uat .ssh-details {
+    font-size: 20px; }

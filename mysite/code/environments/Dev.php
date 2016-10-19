@@ -14,7 +14,9 @@ class Dev extends DataObject
         'SiteURL' => 'Text',
         'BackEndAddress' => 'Text',
         'BackEndUser' => 'Text',
-        'BackEndPass' => 'Text'
+        'BackEndPass' => 'Text',
+        'HtaccessUser' => 'Text',
+        'HtaccessPass' => 'Text'
     );
 
     private static $has_one = array(
@@ -31,11 +33,12 @@ class Dev extends DataObject
             null,
             true
         ), 'SiteURL');
-
         return $fields;
-
     }
 
+    /**
+     * Environment Summary
+     */
     private static $summary_fields = array(
         'SiteURL' => 'SiteURL',
         'CWPCheck' => 'Is this CWP',
@@ -97,6 +100,14 @@ class Dev extends DataObject
 
         }
         return $sshString;
+    }
+
+    public function LaunchTerminal()
+    {
+//        $cmd = '/Applications/Utilities/Terminal.app';
+//        exec($cmd);
+        exec('osascript -e \'tell app "iTunes" to play\'');
+        exec('osascript /Applications/iTunes.app');
     }
 
 }

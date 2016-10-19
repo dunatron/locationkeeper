@@ -14,7 +14,9 @@ class Live extends DataObject
         'SiteURL' => 'Text',
         'BackEndAddress' => 'Text',
         'BackEndUser' => 'Text',
-        'BackEndPass' => 'Text'
+        'BackEndPass' => 'Text',
+        'HtaccessUser' => 'Text',
+        'HtaccessPass' => 'Text'
     );
 
     private static $has_one = array(
@@ -30,7 +32,7 @@ class Live extends DataObject
             Server::get()->map('ID', 'NameAddress')->toArray(),
             null,
             true
-        ), 'ServerURL');
+        ), 'SiteURL');
         return $fields;
     }
 
@@ -98,6 +100,14 @@ class Live extends DataObject
 
         }
         return $sshString;
+    }
+
+    public function LaunchTerminal()
+    {
+//        $cmd = '/Applications/Utilities/Terminal.app';
+//        exec($cmd);
+        exec('osascript -e \'tell app "iTunes" to play\'');
+        exec('osascript /Applications/iTunes.app');
     }
 
 }

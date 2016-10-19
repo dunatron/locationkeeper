@@ -1,2 +1,13 @@
 @import "bootstrap";
 @import "bootstrap/theme";
+
+// Import custom base
+@import "base/base";
+
+// Nav
+@import "nav/nav";
+
+@import "Page/page";
+
+// ProjectPage
+@import "ProjectPage/project-page";

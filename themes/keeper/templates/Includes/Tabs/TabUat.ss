@@ -2,16 +2,16 @@
 
     <% loop $UatEnvironments %>
 
-
-
         <% if $CWPCheck == 'YES' %>
-            <h3>Server is on cwp and requires you to log into <a href="https://deploy.cwp.govt.nz" target="_blank">Deployonaught</a> </h3>
+            <h3 class="cwp-instance">Server is on cwp and requires you to log into <a href="https://deploy.cwp.govt.nz"
+                                                                                      target="_blank">Deployonaught</a>
+            </h3>
         <% else %>
             <%-- SSH String --%>
-            $MakeSSH
+            <div class="ssh-details">
+                $MakeSSH
+            </div>
         <% end_if %>
-
-
 
         <table class="table table-hover">
             <thead>
@@ -19,13 +19,38 @@
             <tr>
                 <th>Server Name</th>
                 <th>
-                    <% loop $GetServer %>
-                        $ServerName
-                    <% end_loop %>
+                    <% if $CWPCheck == 'YES' %>
+                        <a class="cwp-instance" href="https://deploy.cwp.govt.nz" target="_blank">Deployonaught</a>
+                    <% else %>
+                        <% loop $GetServer %>
+                            $ServerName
+                        <% end_loop %>
+                    <% end_if %>
                 </th>
             </tr>
             </thead>
             <tbody>
+                <%-- Site URL --%>
+            <tr>
+                <td>Site URL</td>
+                <td class="site-url">$SiteURL</td>
+            </tr>
+                <%-- Back End Address --%>
+            <tr>
+                <td>Back-End Address</td>
+                <td class="site-backend-url">$BackEndAddress</td>
+
+            </tr>
+                <%-- Back End User --%>
+            <tr>
+                <td>Back-End User</td>
+                <td class="backend-user">$BackEndUser</td>
+            </tr>
+                <%-- Back End Pass --%>
+            <tr>
+                <td>Back-End Password</td>
+                <td class="backend-pass">$BackEndPass</td>
+            </tr>
                 <%-- Server Address --%>
             <tr>
                 <td>Server Address</td>
@@ -34,7 +59,6 @@
                         $ServerAddress
                     <% end_loop %>
                 </td>
-
             </tr>
                 <%-- Server Dev User --%>
             <tr>
@@ -44,7 +68,6 @@
                         $DevSSHUser
                     <% end_loop %>
                 </td>
-
             </tr>
                 <%-- Server Dev Password --%>
             <tr>
@@ -54,7 +77,6 @@
                         $DevSSHPass
                     <% end_loop %>
                 </td>
-
             </tr>
                 <%-- Server Root User --%>
             <tr>
@@ -64,7 +86,6 @@
                         $RootSSHUser
                     <% end_loop %>
                 </td>
-
             </tr>
                 <%-- Server Root Password --%>
             <tr>
@@ -74,44 +95,18 @@
                         $RootSSHPass
                     <% end_loop %>
                 </td>
-
-            </tr>
-                <%-- Site URL --%>
-            <tr>
-                <td>Site URL</td>
-                <td class="site-url">$SiteURL</td>
-
             </tr>
                 <%-- Htaccess User --%>
             <tr>
                 <td>Htaccess-User</td>
                 <td>$HtaccessUser</td>
-
             </tr>
                 <%-- Htaccess Pass --%>
             <tr>
                 <td>Htaccess-Pass</td>
                 <td>$HtaccessPass</td>
-
             </tr>
-                <%-- Back End Address --%>
-            <tr>
-                <td>Back-End Address</td>
-                <td>$BackEndAddress</td>
 
-            </tr>
-                <%-- Back End User --%>
-            <tr>
-                <td>Back-End User</td>
-                <td>$BackEndUser</td>
-
-            </tr>
-                <%-- Back End Pass --%>
-            <tr>
-                <td>Back-End Password</td>
-                <td>$BackEndPass</td>
-
-            </tr>
             </tbody>
         </table>
     <% end_loop %>

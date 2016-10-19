@@ -1,15 +1,13 @@
-<hr>
-<h2>$ProjectName</h2>
-<h3>$Client</h3>
+<h2 class="project-title">$ProjectName</h2>
 <% loop $getCMSType %>
-    <h3>CMS TYPE -> $CMSName</h3>
+    <h3 class="cms-type">$CMSName</h3>
 <% end_loop %>
 <hr>
 <div class="content">
     $Content
 </div>
 <hr>
-<h3>Important Notes about this Project <small>chronologically ordered</small></h3>
+<h3 class="important-title">Important Notes <small>chronologically ordered</small></h3>
 <hr>
 <div id="note-accordion" role="tablist" aria-multiselectable="true">
     <% loop $PaginatedNotes %>
@@ -24,7 +22,9 @@
             </div>
             <div id="collapse-$Pos" class="panel-collapse collapse <% if $First %>in<% else %><% end_if %>"
                  role="tabpanel" aria-labelledby="headingOne">
-                $NoteBody
+                <div class="note-body-wrapper">
+                    $NoteBody
+                </div>
             </div>
         </div>
     <% end_loop %>

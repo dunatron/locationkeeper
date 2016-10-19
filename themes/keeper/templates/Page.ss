@@ -13,34 +13,27 @@
     <meta name="author" content="Heath Dunlop"/>
     <title>$Title</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="$ThemeDir/public/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="$ThemeDir/public/css/app.css"/>
 
 </head>
-<body>
-
-
-
-
-
-
+<body class="$ClassName">
     <% include Nav %>
 
     <% if CurrentMember %>
         $Layout
         $Form
-
     <% else %>
     <h1>Please login to View Module Resources</h1>
-        <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
+    <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
     <% end_if %>
 
 <!-- Modal -->
 <div id="TronLoginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -48,8 +41,6 @@
                 <h4 class="modal-title">Login Form</h4>
             </div>
             <div class="modal-body">
-
-
                 <% if CurrentMember %>
                     <% loop CurrentMember %>
                         <h1>You Are Currently Logged in as</h1>
@@ -60,8 +51,6 @@
                 <% else %>
                     $LoginForm
                 <% end_if %>
-
-
             </div>
             <%--<div class="modal-footer">--%>
             <%--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--%>
@@ -70,15 +59,12 @@
 
     </div>
 </div>
-
-
-
-
-
 <!-- Latest compiled and minified JavaScript -->
-<%--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>--%>
+    <%--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>--%>
 <!-- Latest compiled and minified bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>

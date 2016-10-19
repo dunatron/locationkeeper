@@ -1,0 +1,28 @@
+.nav-tabs { // (ul)
+  margin-top: 20px;
+  border-bottom: 1px solid $c_samdog_green;
+  li {
+    a {
+      border-radius: 0;
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+  .active { // (active li)
+    a {
+      color: $c_samdog_green;
+      border-top: 1px solid $c_samdog_green;
+      border-right: 1px solid $c_samdog_green;
+      border-left: 1px solid $c_samdog_green;
+      border-bottom: 1px solid #FFF;
+      &:hover, &:focus {
+        color: $c_samdog_green;
+        border-top: 1px solid $c_samdog_green;
+        border-right: 1px solid $c_samdog_green;
+        border-left: 1px solid $c_samdog_green;
+        border-bottom: 1px solid #FFF;
+      }
+    }
+  }
+}
