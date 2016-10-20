@@ -21,6 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/keeper/css/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TabLive.ss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/Tabs/TabLive.ss">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_tab-content.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_tab-content.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/keeper/css/ProjectPage/parts/_tab-content.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="893">
+              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -54,8 +64,8 @@
       <file leaf-file-name="ServerHolder.ss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/ServerHolder.ss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="57">
+              <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -64,8 +74,8 @@
       <file leaf-file-name="_server-holder.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/keeper/css/ServerHolder/_server-holder.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="437">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -74,8 +84,8 @@
       <file leaf-file-name="TabNotes.ss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/Tabs/TabNotes.ss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+            <state relative-caret-position="152">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -163,10 +173,10 @@
         <option value="$PROJECT_DIR$/themes/keeper/css/nav/_nav.scss" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/Page.ss" />
         <option value="$PROJECT_DIR$/mysite/code/ServerHolder.php" />
-        <option value="$PROJECT_DIR$/themes/keeper/css/app.scss" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/ServerHolder.ss" />
         <option value="$PROJECT_DIR$/themes/keeper/css/ServerHolder/_server-holder.scss" />
         <option value="$PROJECT_DIR$/themes/keeper/css/ProjectPage/parts/_tab-content.scss" />
+        <option value="$PROJECT_DIR$/themes/keeper/css/app.scss" />
       </list>
     </option>
   </component>
@@ -740,12 +750,12 @@
       <workItem from="1476845629000" duration="5693000" />
       <workItem from="1476906809881" duration="4000" />
       <workItem from="1476992906735" duration="1061000" />
-      <workItem from="1476994505876" duration="2453000" />
+      <workItem from="1476994505876" duration="2919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54059000" />
+    <option name="totallyTimeSpent" value="54525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="51" width="2159" height="1274" extended-state="0" />
@@ -1088,38 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/code/ServerHolder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/Tabs/TabNotes.ss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/css/ServerHolder/_server-holder.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/css/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/code/DataObjects/Server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1128,18 +1106,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/ServerHolder.ss">
+    <entry file="file://$PROJECT_DIR$/themes/keeper/css/ProjectPage/parts/_tab-content.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/Tabs/TabLive.ss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="893">
+          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1152,10 +1122,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/css/ProjectPage/parts/_tab-content.scss">
+    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/Tabs/TabLive.ss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="171">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/css/ServerHolder/_server-holder.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/Tabs/TabNotes.ss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/code/ServerHolder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/ServerHolder.ss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/css/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding />
         </state>
       </provider>

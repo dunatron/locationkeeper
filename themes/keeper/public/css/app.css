@@ -6339,6 +6339,25 @@ h1 {
     color: #fbbc40;
     font-size: 12px; }
 
+.ServerHolder .panel .panel-heading {
+  color: #f0523f; }
+
+.ServerHolder .panel .server-body-wrapper {
+  padding: 20px; }
+
+.ServerHolder .panel .cwp-check h1 {
+  font-size: 18px; }
+
+.ServerHolder .panel .Attribute {
+  font-size: 18px;
+  font-family: GustanLight;
+  color: #4da7ca; }
+
+.ServerHolder .panel .Value {
+  font-size: 18px;
+  font-family: GustanLight;
+  color: #66AD28; }
+
 .ProjectPage .project-titles .project-name span {
   color: #66AD28; }
 
@@ -6434,22 +6453,3 @@ h1 {
       font-size: 20px; }
   .ProjectPage .tab-content #uat .ssh-details {
     font-size: 20px; }
-
-.ServerHolder .panel .panel-heading {
-  color: #f0523f; }
-
-.ServerHolder .panel .server-body-wrapper {
-  padding: 20px; }
-
-.ServerHolder .panel .cwp-check h1 {
-  font-size: 18px; }
-
-.ServerHolder .panel .Attribute {
-  font-size: 18px;
-  font-family: GustanLight;
-  color: #4da7ca; }
-
-.ServerHolder .panel .Value {
-  font-size: 18px;
-  font-family: GustanLight;
-  color: #66AD28; }
