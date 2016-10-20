@@ -6369,6 +6369,10 @@ h1 {
   .ProjectPage .tab-content .cwp-instance {
     font-size: 14px;
     font-family: GustanMedium; }
+  .ProjectPage .tab-content .ssh-details {
+    font-size: 14px;
+    font-family: GustanMedium;
+    color: #fbbc40; }
   .ProjectPage .tab-content .table tbody tr .site-url {
     color: #66AD28; }
   .ProjectPage .tab-content .table tbody tr .site-backend-url {
@@ -6430,3 +6434,22 @@ h1 {
       font-size: 20px; }
   .ProjectPage .tab-content #uat .ssh-details {
     font-size: 20px; }
+
+.ServerHolder .panel .panel-heading {
+  color: #f0523f; }
+
+.ServerHolder .panel .server-body-wrapper {
+  padding: 20px; }
+
+.ServerHolder .panel .cwp-check h1 {
+  font-size: 18px; }
+
+.ServerHolder .panel .Attribute {
+  font-size: 18px;
+  font-family: GustanLight;
+  color: #4da7ca; }
+
+.ServerHolder .panel .Value {
+  font-size: 18px;
+  font-family: GustanLight;
+  color: #66AD28; }

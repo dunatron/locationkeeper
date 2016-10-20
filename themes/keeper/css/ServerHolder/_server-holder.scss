@@ -1,0 +1,29 @@
+.ServerHolder {
+  .panel{
+    .panel-heading {
+      color: $c_samdog_red;
+    }
+    .panel-collapse {
+
+    }
+
+    .server-body-wrapper {
+      padding: 20px;
+    }
+    .cwp-check {
+      h1 {
+        font-size: 18px;
+      }
+    }
+    .Attribute {
+      font-size: 18px;
+      font-family: $font_GustanLight;
+      color: $c_samdog_blue;
+    }
+    .Value {
+      font-size: 18px;
+      font-family: $font_GustanLight;
+      color: $c_samdog_green;
+    }
+  }
+}
