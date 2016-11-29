@@ -21,6 +21,10 @@
 
 </head>
 <body class="$ClassName">
+
+<div>
+
+</div>
     <% include Nav %>
 
     <% if CurrentMember %>

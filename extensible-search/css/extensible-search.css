@@ -1,0 +1,60 @@
+
+/**
+ *	The extensible search specific styling.
+ *	@author Nathan Glasl <nathan@silverstripe.com.au>
+ */
+
+p.extensible-search.notice,
+p.extensible-search.notification {
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+p.extensible-search.notice {
+	background: #F0F8FC;
+	border: 1px solid #93CDE8;
+}
+
+p.extensible-search.notification {
+	background: #FFA84C;
+	background: -o-linear-gradient(top, #FFA84C, #FF7B0D);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr = '#FFA84C', endColorStr = '#FF7B0D');
+	background: -ms-linear-gradient(top, #FFA84C, #FF7B0D);
+	background: -moz-linear-gradient(top, #FFA84C, #FF7B0D);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFA84C), color-stop(100%, #FF7B0D));
+	background: -webkit-linear-gradient(top, #FFA84C, #FF7B0D);
+	border: 1px solid #FF7400;
+}
+
+#Form_EditForm_Suggestions input.approved {
+	cursor: pointer;
+}
+
+/* Correcting some core layout issues. */
+
+div.start-with-listing input,
+div.start-with-listing label,
+li.valEXTENSIBLE_SEARCH_SUGGESTIONS input,
+li.valEXTENSIBLE_SEARCH_SUGGESTIONS label {
+	vertical-align: middle;
+}
+
+#Root_SearchAnalytics p.grid-csv-button {
+	margin-top: 8px;
+	padding-bottom: 1px;
+}
+
+#Form_EditForm_Summary tr.ss-gridfield-item,
+#Form_EditForm_History tr.ss-gridfield-item {
+	cursor: default;
+}
+
+div.approved.wrapper input.approved {
+	margin-top: 2px;
+}
+
+div.approved.wrapper span.readonly {
+	padding-top: 0;
+}

@@ -9,6 +9,10 @@
 class Live extends DataObject
 {
 
+    private static $create_table_options = array(
+        'MySQLDatabase' => 'ENGINE=MyISAM'
+    );
+
     private static $db = array(
         'ServerAddress' => 'Varchar(100)',
         'SiteURL' => 'Text',

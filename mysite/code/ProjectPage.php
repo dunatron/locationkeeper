@@ -11,6 +11,23 @@ class ProjectPage extends Page
 
     private static $can_be_root = false;
 
+    private static $searchable_fields = array(
+        'ProjectName',
+        'Client'
+    );
+
+    private static $indexes = array(
+        'SearchFields' => array(
+            'type' => 'fulltext',
+            'name' => 'SearchFields',
+            'value' => '"Client"',
+        )
+    );
+
+    private static $create_table_options = array(
+        'MySQLDatabase' => 'ENGINE=MyISAM'
+    );
+
     private static $db = array(
         'ProjectName' => 'Text',
         'Client' => 'Text',

@@ -8,8 +8,48 @@ After:
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
-  theme: 'simple'
+  theme: 'keeper'
 
 SiteConfig:
   extensions:
    - CustomSiteConfig
+
+DataObject:
+  extensions:
+    - MyISAMExtension
+
+
+ExtensibleSearchPage:
+  search_engine_extensions:
+    SolrSearch: 'Solr'
+  extensions:
+    - 'SolrSearch'
+ExtensibleSearchPage_Controller:
+  extensions:
+    - 'SolrSearch_Controller'
+
+FulltextSearchable:
+  searchable_classes:
+    - 'SiteTree'
+SiteTree:
+  create_table_options:
+    MySQLDatabase:
+      'ENGINE=MyISAM'
+  extensions:
+    - "FulltextSearchable('Title, MenuTitle, Content, MetaDescription')"
+
+Page_Controller:
+  extensions:
+    - 'ExtensibleSearchExtension'
+
+ProjectPage:
+  create_table_options:
+    MySQLDatabase:
+      'ENGINE=MyISAM'
+  extensions:
+    - "FulltextSearchable('Client')"
+
+ProjectPage_Controller:
+  extensions:
+    - 'ExtensibleSearchExtension'
+

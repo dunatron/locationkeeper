@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e887adb98910585023d65e8c0a55433b",
-    "content-hash": "1d90626149a302e48e27a5c9e1e9e4d2",
+    "hash": "d97bd21735728a1bcbce357b53127068",
+    "content-hash": "f20b5ae3a18ac30614479b04530f645f",
     "packages": [
         {
             "name": "composer/installers",
@@ -113,6 +113,175 @@
                 "zikula"
             ],
             "time": "2016-08-13 20:53:52"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bad29cb8d18ab0315e6c477751418a82c850d558",
+                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "~5.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2016-11-26 00:15:39"
+        },
+        {
+            "name": "nglasl/silverstripe-extensible-search",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nglasl/silverstripe-extensible-search.git",
+                "reference": "3faf92507dd4259303e8789039ba2fed70a35617"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nglasl/silverstripe-extensible-search/zipball/3faf92507dd4259303e8789039ba2fed70a35617",
+                "reference": "3faf92507dd4259303e8789039ba2fed70a35617",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.2",
+                "silverstripe/framework": "~3.2"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "extensible-search",
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nathan Glasl",
+                    "email": "nathan@silverstripe.com.au"
+                }
+            ],
+            "description": "A module for SilverStripe which will allow user customisation and developer extension of a search page instance, including analytics and suggestions.",
+            "homepage": "https://github.com/nglasl/silverstripe-extensible-search",
+            "keywords": [
+                "full-text",
+                "search",
+                "silverstripe"
+            ],
+            "time": "2016-11-21 03:39:08"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "silverstripe/cms",
@@ -223,6 +392,130 @@
             "time": "2016-02-29 02:23:25"
         },
         {
+            "name": "silverstripe/fulltextsearch",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-fulltextsearch.git",
+                "reference": "0ac3bb3668f2a96801bc196ab3828a052107b8aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-fulltextsearch/zipball/0ac3bb3668f2a96801bc196ab3828a052107b8aa",
+                "reference": "0ac3bb3668f2a96801bc196ab3828a052107b8aa",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "~1.15",
+                "silverstripe/framework": "~3.1"
+            },
+            "require-dev": {
+                "hafriedlander/silverstripe-phockito": "*",
+                "silverstripe/cms": "~3.1"
+            },
+            "suggest": {
+                "silverstripe/fulltextsearch-localsolr": "Adds a ready-to-use local Solr server for initial development"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Hamish Friedlander",
+                    "email": "hamish@silverstripe.com"
+                },
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds support for Fulltext Search engines like Sphinx and Solr to SilverStripe CMS",
+            "keywords": [
+                "fulltext",
+                "silverstripe",
+                "solr",
+                "sphinx"
+            ],
+            "time": "2016-11-16 21:15:58"
+        },
+        {
+            "name": "silverstripe/fulltextsearch-localsolr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-labs/silverstripe-fulltextsearch-localsolr.git",
+                "reference": "46c52e21d76bcfc304c0fec1e0222c7ab9a139c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-fulltextsearch-localsolr/zipball/46c52e21d76bcfc304c0fec1e0222c7ab9a139c0",
+                "reference": "46c52e21d76bcfc304c0fec1e0222c7ab9a139c0",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1",
+                "silverstripe/fulltextsearch": "*"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Hamish Friedlander",
+                    "email": "hamish@silverstripe.com"
+                }
+            ],
+            "description": "A pre-configured, ready to use Solr instance for local development with the SilverStripe fulltextsearch module",
+            "keywords": [
+                "silverstripe",
+                "solr"
+            ],
+            "time": "2015-02-16 04:46:46"
+        },
+        {
+            "name": "silverstripe/multivaluefield",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-australia/silverstripe-multivaluefield.git",
+                "reference": "200055c8edb08e8607bf0a829475a32b9d9b2bf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-multivaluefield/zipball/200055c8edb08e8607bf0a829475a32b9d9b2bf1",
+                "reference": "200055c8edb08e8607bf0a829475a32b9d9b2bf1",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                }
+            ],
+            "description": "A DB field + form fields for storing multiple values in a single property (serialized).",
+            "keywords": [
+                "dbfield",
+                "formfield",
+                "silverstripe"
+            ],
+            "time": "2016-07-26 00:58:14"
+        },
+        {
             "name": "silverstripe/reports",
             "version": "3.3.1",
             "source": {
@@ -313,6 +606,49 @@
                 "siteconfig"
             ],
             "time": "2016-02-24 03:06:04"
+        },
+        {
+            "name": "silverstripe/solr",
+            "version": "5.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nyeholt/silverstripe-solr.git",
+                "reference": "448654bc210533658783af015ff4e0a82e671fe8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nyeholt/silverstripe-solr/zipball/448654bc210533658783af015ff4e0a82e671fe8",
+                "reference": "448654bc210533658783af015ff4e0a82e671fe8",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1",
+                "silverstripe/multivaluefield": "~2.0"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstirpe.com.au"
+                }
+            ],
+            "description": "Solr integration for SilverStripe. Note that this is NOT related to the silverstripe/fulltext package.",
+            "keywords": [
+                "search",
+                "silverstripe",
+                "solr"
+            ],
+            "time": "2016-11-16 03:38:41"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -769,7 +1105,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "silverstripe/fulltextsearch-localsolr": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
