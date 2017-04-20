@@ -4,7 +4,7 @@ global $project;
 $project = 'mysite';
 
 global $database;
-$database = 'locationkeeper_dev_db';
+$database = 'SS_locationkeeper_db';
 
 require_once('conf/ConfigureFromEnv.php');
 
@@ -18,7 +18,7 @@ Solr::configure_server(array(
     'host' => 'localhost',
     'indexstore' => array(
         'mode' => 'file',
-        'path' => BASE_PATH . '/solr'
+        'path' => BASE_PATH . '/.solr'
     ),
     'port'  =>  '8983'
 ));
