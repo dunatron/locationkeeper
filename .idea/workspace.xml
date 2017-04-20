@@ -31,11 +31,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/_config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeHolder.ss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/CodeHolder.ss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search_Results.ss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -149,12 +179,12 @@
         <option value="$PROJECT_DIR$/themes/keeper/templates/Includes/Nav.ss" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/CodeHolder.ss" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Page.ss" />
-        <option value="$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss" />
         <option value="$PROJECT_DIR$/mysite/code/Page.php" />
         <option value="$PROJECT_DIR$/themes/keeper/js/search/code-search.js" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/mysite/_config.php" />
+        <option value="$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss" />
       </list>
     </option>
   </component>
@@ -704,12 +734,12 @@
       <workItem from="1489882127991" duration="12000" />
       <workItem from="1489882204959" duration="2000" />
       <workItem from="1491442183421" duration="49000" />
-      <workItem from="1492725439198" duration="5153000" />
+      <workItem from="1492725439198" duration="5490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89611000" />
+    <option name="totallyTimeSpent" value="89948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="195" y="81" width="1918" height="1270" extended-state="0" />
@@ -1027,14 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/_config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/code/extensions/MyISAMExtension.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1051,14 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/code/CodeHolder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1071,14 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/CodeHolder.ss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1151,8 +1157,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/_config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/_config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/CodeHolder.ss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
