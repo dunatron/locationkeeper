@@ -14,15 +14,20 @@ class Code extends DataObject
     );
 
     private static $create_table_options = array(
-        'MySQLDatabase' => 'ENGINE=MyISAM'
+        'MySQLDatabase' =>  'ENGINE=MyISAM'
     );
 
     private static $indexes = array(
-        'SearchFields' => array(
+        'SearchFields'  =>  array(
             'type'  =>  'fulltext',
             'name'  =>  'SearchFields',
             'value' =>  '"Title", "Desc"',
         )
+    );
+
+    static $defaults = array (
+        'ShowInMenus' => false,
+        'ShowInSearch' => true
     );
 
     private static $has_one = array(

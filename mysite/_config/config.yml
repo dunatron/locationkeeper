@@ -14,42 +14,25 @@ SiteConfig:
   extensions:
    - CustomSiteConfig
 
-DataObject:
-  extensions:
-    - MyISAMExtension
-
-
-ExtensibleSearchPage:
-  search_engine_extensions:
-    SolrSearch: 'Solr'
-  extensions:
-    - 'SolrSearch'
-ExtensibleSearchPage_Controller:
-  extensions:
-    - 'SolrSearch_Controller'
-
 FulltextSearchable:
   searchable_classes:
-    - 'SiteTree'
+    - 'Code'
 SiteTree:
   create_table_options:
     MySQLDatabase:
       'ENGINE=MyISAM'
   extensions:
+    - MyISAMExtension
     - "FulltextSearchable('Title, MenuTitle, Content, MetaDescription')"
 
-Page_Controller:
+DataObject:
   extensions:
-    - 'ExtensibleSearchExtension'
+    - MyISAMExtension
 
-ProjectPage:
-  create_table_options:
-    MySQLDatabase:
-      'ENGINE=MyISAM'
+Event:
   extensions:
-    - "FulltextSearchable('Client')"
+    - MyISAMExtension
 
-ProjectPage_Controller:
+File:
   extensions:
-    - 'ExtensibleSearchExtension'
-
+    - MyISAMExtension

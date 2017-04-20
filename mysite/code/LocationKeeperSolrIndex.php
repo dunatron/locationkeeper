@@ -7,10 +7,15 @@
  */
 class LocationKeeperSolrIndex extends SolrIndex {
     public function init() {
-        $this->addClass('SiteTree');
+        $this->addClass('Code');
+        $this->addStoredField('Title');
+        $this->addStoredField('Desc');
 
         $this->addAllFulltextFields();
-        $this->addFilterField('ShowInSearch');
-        $this->excludeVariantState(array('SearchVariantVersioned' => 'Stage'));
+        $this->addBoostedField('Title', null, array(), 3);
+        $this->addBoostedField('Desc', null, array(), 2);
+
+
+        //$this->excludeVariantState(array('SearchVariantVersioned' => 'Stage'));
     }
 }
