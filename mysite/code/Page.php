@@ -28,7 +28,8 @@ class Page_Controller extends ContentController
      */
     private static $allowed_actions = array(
         'CodeSearchForm',
-        'searchCode'
+        'searchCode',
+        'goSearch'
     );
 
     public function init()
@@ -52,15 +53,19 @@ class Page_Controller extends ContentController
         );
 
         $actions = FieldList::create(
-            FormAction::create('searchCode', 'Search')->addExtraClass('code-search-btn')
+            FormAction::create('goSearch', 'Search')->addExtraClass('code-search-btn')
         );
 
         $form = Form::create($this, 'CodeSearchForm', $fields, $actions)->addExtraClass('code-search-form');
+        $form->disableSecurityToken();
+        $form->setFormMethod('GET', true);
+        $form->setTemplate('CodeSearchForm');
+        $form->addExtraClass('searchForm');
 
         return $form;
     }
 
-    public function searchCode($data, $form, SS_HTTPRequest $request)
+    public function goSearch($data, $form, SS_HTTPRequest $request)
     {
         //https://github.com/silverstripe/silverstripe-fulltextsearch/blob/master/docs/en/Solr.md
         $Search = '';
