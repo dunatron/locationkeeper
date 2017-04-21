@@ -7,6 +7,7 @@
  */
 class LocationKeeperSolrIndex extends SolrIndex {
     public function init() {
+        $this->addClass('SiteTree');
         $this->addClass('Code');
         $this->addStoredField('Title');
         $this->addStoredField('Desc');
