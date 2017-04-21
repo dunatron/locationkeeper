@@ -21,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Page.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            <state relative-caret-position="460">
+              <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code-search.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="code-search.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/keeper/js/search/code-search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="380">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -153,10 +153,10 @@
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/Page_results.ss" />
         <option value="$PROJECT_DIR$/mysite/_config/routes.yml" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss" />
-        <option value="$PROJECT_DIR$/themes/keeper/js/search/code-search.js" />
         <option value="$PROJECT_DIR$/mysite/code/LocationKeeperSolrIndex.php" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/Search_Test.ss" />
         <option value="$PROJECT_DIR$/mysite/code/Page.php" />
+        <option value="$PROJECT_DIR$/themes/keeper/js/search/code-search.js" />
       </list>
     </option>
   </component>
@@ -778,12 +778,12 @@
       <workItem from="1489882127991" duration="12000" />
       <workItem from="1489882204959" duration="2000" />
       <workItem from="1491442183421" duration="49000" />
-      <workItem from="1492725439198" duration="8437000" />
+      <workItem from="1492725439198" duration="8647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92895000" />
+    <option name="totallyTimeSpent" value="93105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="195" y="81" width="1918" height="1270" extended-state="0" />
@@ -1224,21 +1224,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/js/search/code-search.js">
+    <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="460">
+          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
+    <entry file="file://$PROJECT_DIR$/themes/keeper/js/search/code-search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="380">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

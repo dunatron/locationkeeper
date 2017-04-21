@@ -21,6 +21,11 @@ $(document).ready(function () {
             data: {Keyword:keyword},
             success: function (response) {
                 $('.search-results-wrapper').html(response);
+                window.history.pushState(
+                    {url: url},
+                    document.title,
+                    url
+                );
             },
             complete: function(){
 
