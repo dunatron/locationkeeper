@@ -110,7 +110,7 @@ class Page_Controller extends ContentController
             'IsEmpty' => $IsEmpty
         ));
 
-        return $this->owner->customise($searchData)->renderWith('Search_Results');
+        return $this->owner->customise($searchData)->renderWith('Search_Test');
     }
 
 }
