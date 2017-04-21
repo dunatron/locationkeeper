@@ -28,7 +28,7 @@ $(document).ready(function () {
             success: function (response) {
                 $('.search-results-wrapper').html(response);
                 window.history.pushState(
-                    {url: cleanUrl},
+                    {url: cleanUrl + '/fuck you'},
                     document.title,
                     cleanUrl
                 );
