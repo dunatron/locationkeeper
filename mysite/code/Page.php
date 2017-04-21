@@ -88,7 +88,6 @@ class Page_Controller extends ContentController
         foreach ($results->Matches as $r) {
             {
                 $ResultsList->add($r);
-                array_push($resultsIDArr, $r->ID);
             }
         }
 
