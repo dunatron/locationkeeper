@@ -24,18 +24,18 @@
       <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="103" column="82" selection-start-line="64" selection-start-column="8" selection-end-line="103" selection-end-column="82" />
+            <state relative-caret-position="684">
+              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code-search.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="code-search.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/keeper/js/search/code-search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="285">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeHolder.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CodeHolder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/code/CodeHolder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+            <state relative-caret-position="232">
+              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss" />
         <option value="$PROJECT_DIR$/mysite/code/LocationKeeperSolrIndex.php" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/Search_Test.ss" />
-        <option value="$PROJECT_DIR$/mysite/code/Page.php" />
         <option value="$PROJECT_DIR$/themes/keeper/js/search/code-search.js" />
+        <option value="$PROJECT_DIR$/mysite/code/Page.php" />
         <option value="$PROJECT_DIR$/mysite/code/CodeHolder.php" />
       </list>
     </option>
@@ -788,12 +788,12 @@
       <workItem from="1489882127991" duration="12000" />
       <workItem from="1489882204959" duration="2000" />
       <workItem from="1491442183421" duration="49000" />
-      <workItem from="1492725439198" duration="9952000" />
+      <workItem from="1492725439198" duration="10527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94410000" />
+    <option name="totallyTimeSpent" value="94985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="337" y="84" width="1918" height="1270" extended-state="0" />
@@ -1218,24 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="103" column="82" selection-start-line="64" selection-start-column="8" selection-end-line="103" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/js/search/code-search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/code/LocationKeeperSolrIndex.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1244,11 +1226,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/code/CodeHolder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+        <state relative-caret-position="232">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/js/search/code-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

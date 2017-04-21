@@ -60,7 +60,7 @@ class Page_Controller extends ContentController
         return $form;
     }
 
-    public function searchCode($data, $form = '', SS_HTTPRequest $request)
+    public function searchCode($data, $form = '')
     {
         //https://github.com/silverstripe/silverstripe-fulltextsearch/blob/master/docs/en/Solr.md
         $Search = '';
