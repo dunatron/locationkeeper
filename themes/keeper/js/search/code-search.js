@@ -27,7 +27,9 @@ $(document).ready(function () {
         //     }
         // });
 
-        var url = window.location.href + '/searchCode';
+        //var url = window.location.href + '/searchCode';
+        var url = window.location.href;
+
 
         $.ajax(url)
             .done(function (response) {
