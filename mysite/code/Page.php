@@ -52,7 +52,7 @@ class Page_Controller extends ContentController
         $actions = new FieldList(
             FormAction::create('goSearch','Go')->addExtraClass('search-active')->setUseButtonTag(true)
         );
-        $form = new Form($this, 'RoyalSearchForm', $fields, $actions);
+        $form = new Form($this, 'CodeSearchForm', $fields, $actions);
         $form->setTemplate('CodeSearchForm');
         $form->disableSecurityToken();
         $form->setFormMethod('GET', true);
