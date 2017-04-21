@@ -22,7 +22,7 @@ $(document).ready(function () {
             success: function (response) {
                 $('.search-results-wrapper').html(response);
                 window.history.pushState(
-                    {url: url},
+                    {url: url + 'test'},
                     document.title,
                     url
                 );
