@@ -14,12 +14,6 @@ $(document).ready(function () {
             url = browserurl,
             keyword = $('#Form_CodeSearchForm_keyword').val();
 
-        var param = '&ajax=1',
-            ajaxUrl = (url.indexOf(param) === -1) ?
-            url + '&ajax=1' :
-                url,
-            cleanUrl = url.replace(new RegExp(param+'$'),'');
-
         //alert(url);
         $.ajax({
             type:"POST",
@@ -27,11 +21,6 @@ $(document).ready(function () {
             data: {Keyword:keyword},
             success: function (response) {
                 $('.search-results-wrapper').html(response);
-                window.history.pushState(
-                    {url: cleanUrl + '/fuck you'},
-                    document.title,
-                    cleanUrl
-                );
             },
             complete: function(){
 
