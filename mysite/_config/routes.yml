@@ -1,0 +1,7 @@
+---
+Name: locationkeeperroutes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'search//$Action/$ID' : 'Page_Controller'
