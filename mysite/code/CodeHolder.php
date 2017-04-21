@@ -82,46 +82,52 @@ class CodeHolder_Controller extends Page_Controller
 
     public function index(SS_HTTPRequest $request) {
 
-        //https://github.com/silverstripe/silverstripe-fulltextsearch/blob/master/docs/en/Solr.md
-        $Search = '';
-        //$data['Keyword']
+        if($request->isAjax()) {
+            //https://github.com/silverstripe/silverstripe-fulltextsearch/blob/master/docs/en/Solr.md
+            $Search = '';
+            //$data['Keyword']
 
-        if (isset($data['Keyword'])) {
-            $Search = $data['Keyword'];
-        }
-
-        $index = new LocationKeeperSolrIndex();
-        $query = new SearchQuery();
-        $query->inClass('Code');
-
-        $query->search($Search);
-
-        $params = array(
-            'hl'    =>  'true'
-        );
-        $results = $index->search($query,-1,20, $params);
-
-        $results->spellcheck;
-
-        $ResultsList = ArrayList::create();
-
-        foreach ($results->Matches as $r) {
-            {
-                $ResultsList->add($r);
-
+            if (isset($data['Keyword'])) {
+                $Search = $data['Keyword'];
             }
+
+            $index = new LocationKeeperSolrIndex();
+            $query = new SearchQuery();
+            $query->inClass('Code');
+
+            $query->search($Search);
+
+            $params = array(
+                'hl'    =>  'true'
+            );
+            $results = $index->search($query,-1,20, $params);
+
+            $results->spellcheck;
+
+            $ResultsList = ArrayList::create();
+
+            foreach ($results->Matches as $r) {
+                {
+                    $ResultsList->add($r);
+
+                }
+            }
+
+            error_log(var_export($Search, true));
+            error_log(var_export($ResultsList, true));
+
+
+            $searchData = ArrayData::create(array(
+                'Results' => $ResultsList,
+                'KeyWord' => $Search,
+            ));
+
+            return $this->owner->customise($searchData)->renderWith('Search_Results');
         }
 
-        error_log(var_export($Search, true));
-        error_log(var_export($ResultsList, true));
+        return $this;
 
 
-        $searchData = ArrayData::create(array(
-            'Results' => $ResultsList,
-            'KeyWord' => $Search,
-        ));
-
-        return $this->owner->customise($searchData)->renderWith('Search_Results');
     }
 }
 
