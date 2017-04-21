@@ -79,6 +79,19 @@ class CodeHolder_Controller extends Page_Controller
     {
         parent::init();
     }
+
+    public function index(SS_HTTPRequest $request) {
+
+        //...
+
+        if($request->isAjax()) {
+            return "Ajax response!";
+        }
+
+        return array (
+            'Results' => 'Nothing here'
+        );
+    }
 }
 
 
