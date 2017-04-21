@@ -77,37 +77,26 @@ class Page_Controller extends ContentController
         $query->search($Search);
 
         $params = array(
-            'hl' => 'true'
+            'hl'    =>  'true'
         );
-        $results = $index->search($query, -1, 20, $params); // third param is the amount of results in one go -1 not working. I think 9000 is a good base ;) ;) ;)
+        $results = $index->search($query,-1,20, $params);
 
         $results->spellcheck;
 
         $ResultsList = ArrayList::create();
-        $resultsIDArr = array();
         foreach ($results->Matches as $r) {
             {
                 $ResultsList->add($r);
-                array_push($resultsIDArr, $r->ID);
             }
         }
 
         error_log(var_export($Search, true));
         error_log(var_export($ResultsList, true));
 
-        if(empty($ResultsList))
-        {
-            $IsEmpty = 'It is empty';
-        }
-        else
-        {
-            $IsEmpty = 'NOT EMPTY horray';
-        }
 
         $searchData = ArrayData::create(array(
             'Results' => $ResultsList,
             'KeyWord' => $Search,
-            'IsEmpty' => $IsEmpty
         ));
 
         return $this->owner->customise($searchData)->renderWith('Search_Results');
