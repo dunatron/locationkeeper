@@ -102,7 +102,7 @@ class Page_Controller extends ContentController
             'KeyWord' => $Search,
         ));
 
-        return $this->owner->customise($searchData)->renderWith('Search_Results');
+        return $this->owner->customise($searchData)->renderWith('Search_Test');
     }
 
 }
