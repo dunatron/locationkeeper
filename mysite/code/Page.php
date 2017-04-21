@@ -28,8 +28,7 @@ class Page_Controller extends ContentController
      */
     private static $allowed_actions = array(
         'CodeSearchForm',
-        'searchCode',
-        'goSearch'
+        'searchCode'
     );
 
     public function init()
@@ -46,23 +45,22 @@ class Page_Controller extends ContentController
 
     public function CodeSearchForm()
     {
-        $fields = new FieldList(
-            TextField::create('Search', 'Search')->addExtraClass('search')
+        $searchField = TextField::create('keyword', 'Keyword search')->setAttribute('placeholder', 'Key-word search...');
+
+        $fields = FieldList::create(
+            $searchField
         );
-        $actions = new FieldList(
-            FormAction::create('goSearch','Go')->addExtraClass('search-active')->setUseButtonTag(true)
+
+        $actions = FieldList::create(
+            FormAction::create('searchCode', 'Search')->addExtraClass('code-search-btn')
         );
-        $form = new Form($this, 'CodeSearchForm', $fields, $actions);
-        $form->setTemplate('CodeSearchForm');
-        $form->disableSecurityToken();
-        $form->setFormMethod('GET', true);
-        $form->setTemplate('CodeSearchForm');
-        $form->addExtraClass('searchForm');
+
+        $form = Form::create($this, 'CodeSearchForm', $fields, $actions)->addExtraClass('code-search-form');
 
         return $form;
     }
 
-    public function goSearch($data, $form, SS_HTTPRequest $request)
+    public function searchCode($data, $form = '')
     {
         //https://github.com/silverstripe/silverstripe-fulltextsearch/blob/master/docs/en/Solr.md
         $Search = '';
@@ -74,7 +72,7 @@ class Page_Controller extends ContentController
 
         $index = new LocationKeeperSolrIndex();
         $query = new SearchQuery();
-        //$query->inClass('Code');
+        $query->inClass('Code');
 
         $query->search($Search);
 
@@ -86,9 +84,11 @@ class Page_Controller extends ContentController
         $results->spellcheck;
 
         $ResultsList = ArrayList::create();
+
         foreach ($results->Matches as $r) {
             {
                 $ResultsList->add($r);
+                array_push($resultsIDArr, $r->ID);
             }
         }
 
@@ -101,7 +101,7 @@ class Page_Controller extends ContentController
             'KeyWord' => $Search,
         ));
 
-        return $this->owner->customise($searchData)->renderWith('Page_results');
+        return $this->owner->customise($searchData)->renderWith('Search_Results');
     }
 
 }
