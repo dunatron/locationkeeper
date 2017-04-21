@@ -31,11 +31,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationKeeperSolrIndex.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LocationKeeperSolrIndex.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/code/LocationKeeperSolrIndex.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_results.ss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/Page_results.ss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -101,16 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_ss_environment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_ss_environment.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -169,7 +169,6 @@
         <option value="$PROJECT_DIR$/mysite/code/extensions/MyISAMExtension.php" />
         <option value="$PROJECT_DIR$/mysite/code/TestPage.php" />
         <option value="$PROJECT_DIR$/mysite/code/extensions/TronsSearch.php" />
-        <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/Page_results.ss" />
         <option value="$PROJECT_DIR$/mysite/code/environments/Live.php" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/ProjectHolder.ss" />
         <option value="$PROJECT_DIR$/mysite/code/search/ProjectSearchPage.php" />
@@ -193,6 +192,7 @@
         <option value="$PROJECT_DIR$/mysite/_config.php" />
         <option value="$PROJECT_DIR$/themes/keeper/templates/Includes/search/Search_Results.ss" />
         <option value="$PROJECT_DIR$/mysite/code/LocationKeeperSolrIndex.php" />
+        <option value="$PROJECT_DIR$/themes/keeper/templates/Layout/Page_results.ss" />
       </list>
     </option>
   </component>
@@ -742,12 +742,12 @@
       <workItem from="1489882127991" duration="12000" />
       <workItem from="1489882204959" duration="2000" />
       <workItem from="1491442183421" duration="49000" />
-      <workItem from="1492725439198" duration="5581000" />
+      <workItem from="1492725439198" duration="5742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90039000" />
+    <option name="totallyTimeSpent" value="90200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="195" y="81" width="1918" height="1270" extended-state="0" />
@@ -1073,14 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/Page_results.ss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Page.ss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1191,6 +1183,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/keeper/templates/Layout/Page_results.ss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>
