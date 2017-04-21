@@ -47,17 +47,16 @@ class Page_Controller extends ContentController
     public function CodeSearchForm()
     {
         $fields = new FieldList(
-            TextField::create('Search', 'Search')->addExtraClass('search'),
-            HiddenField::create('From', 'The page the form was sent from')->setValue($this->Link())
+            TextField::create('Search', 'Search')->addExtraClass('search')
         );
         $actions = new FieldList(
             FormAction::create('goSearch','Go')->addExtraClass('search-active')->setUseButtonTag(true)
         );
         $form = new Form($this, 'RoyalSearchForm', $fields, $actions);
-        $form->setTemplate('RoyalSearchForm');
+        $form->setTemplate('CodeSearchForm');
         $form->disableSecurityToken();
         $form->setFormMethod('GET', true);
-        $form->setTemplate('RoyalSearchForm');
+        $form->setTemplate('CodeSearchForm');
         $form->addExtraClass('searchForm');
 
         return $form;
