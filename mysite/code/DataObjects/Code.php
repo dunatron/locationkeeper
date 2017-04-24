@@ -34,10 +34,19 @@ class Code extends DataObject
         'CodeHolder' => 'CodeHolder'
     );
 
+    private static $many_many = array(
+        'CodeTags' =>   'CodeTag'
+    );
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-
+        $fields->addFieldToTab('Root.Main', TagField::create(
+            'CodeTags',
+            'Code Tags',
+            CodeTag::get(),
+            $this->CodeTags()
+        )->setShouldLazyLoad(true)->setCanCreate(true));
         return $fields;
     }
 
