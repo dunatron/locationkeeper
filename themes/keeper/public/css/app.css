@@ -6454,6 +6454,22 @@ h1 {
   .ProjectPage .tab-content #uat .ssh-details {
     font-size: 20px; }
 
+.code-search-bar {
+  padding: 0 10px 10px 10px; }
+  .code-search-bar #Form_CodeSearchForm {
+    display: flex;
+    align-items: center;
+    align-content: center; }
+    .code-search-bar #Form_CodeSearchForm fieldset #Form_CodeSearchForm_keyword_Holder label {
+      display: none; }
+    .code-search-bar #Form_CodeSearchForm fieldset #Form_CodeSearchForm_keyword_Holder input {
+      height: 50px;
+      min-width: 320px;
+      padding: 5px 10px;
+      font-size: 22px; }
+    .code-search-bar #Form_CodeSearchForm .Actions {
+      padding: 15px 30px; }
+
 .search-results-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -6471,4 +6487,5 @@ h1 {
     max-width: 850px; }
     .search-results-wrapper .result-item h1 {
       font-size: 20px;
+      margin-top: 0;
       color: #f0523f; }

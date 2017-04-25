@@ -1,5 +1,26 @@
 .code-search-bar {
-
+  padding: 0 10px 10px 10px;
+  #Form_CodeSearchForm {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    fieldset {
+      #Form_CodeSearchForm_keyword_Holder {
+        label {
+          display: none;
+        }
+        input {
+          height: 50px;
+          min-width: 320px;
+          padding: 5px 10px;
+          font-size: 22px;
+        }
+      }
+    }
+    .Actions {
+      padding: 15px 30px;
+    }
+  }
 }
 
 .search-results-wrapper {
@@ -19,6 +40,7 @@
     max-width: 850px;
     h1 {
       font-size: 20px;
+      margin-top: 0;
       color: $c_samdog_red;
     }
   }
