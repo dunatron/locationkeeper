@@ -48,11 +48,19 @@ class Code extends DataObject
 //            CodeTag::get(),
 //            $this->CodeTags()
 //        )->setShouldLazyLoad(true)->setCanCreate(true));
-        $fields->addFieldToTab('Root.Main', StringTagField::create(
-        'Tags',
-        'Tags',
-            CodeTag::get(),
-        explode(',', $this->Tags))->setShouldLazyLoad(true)->setCanCreate(true));
+//        $fields->addFieldToTab('Root.Main', StringTagField::create(
+//        'Tags',
+//        'Tags',
+//            CodeTag::get(),
+//        explode(',', $this->Tags))->setShouldLazyLoad(true)->setCanCreate(true));
+
+        $fields->addFieldToTab('Root.Main',  StringTagField::create(
+            'EventTags',
+            'Event Tags',
+            CodeTag::get()->map('ID', 'Title')->toArray()
+
+        )->setShouldLazyLoad(false)
+            ->setCanCreate(true));
 
 
         return $fields;
