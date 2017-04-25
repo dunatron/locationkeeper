@@ -55,8 +55,8 @@ class Code extends DataObject
 //        explode(',', $this->Tags))->setShouldLazyLoad(true)->setCanCreate(true));
 
         $fields->addFieldToTab('Root.Main',  StringTagField::create(
-            'EventTags',
-            'Event Tags',
+            'Tags',
+            'Tags',
             CodeTag::get()->map('ID', 'Title')->toArray()
 
         )->setShouldLazyLoad(false)
