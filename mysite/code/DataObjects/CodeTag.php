@@ -11,9 +11,7 @@ class CodeTag extends DataObject
         'Title' => 'Varchar(200)'
     );
 
-    private static $belongs_many_many = array(
-        'Codes' => 'Code'
-    );
+    private static $belongs_many_many = array();
 
     private static $create_table_options = array(
         'MySQLDatabase' =>  'ENGINE=MyISAM'

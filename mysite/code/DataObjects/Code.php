@@ -35,9 +35,7 @@ class Code extends DataObject
         'CodeHolder' => 'CodeHolder'
     );
 
-    private static $many_many = array(
-        'CodeTags' =>   'CodeTag'
-    );
+    private static $many_many = array();
 
     public function getCMSFields()
     {
@@ -59,8 +57,7 @@ class Code extends DataObject
             'Tags',
             CodeTag::get()->map('ID', 'Title')->toArray()
 
-        )->setShouldLazyLoad(false)
-            ->setCanCreate(true));
+        )->setShouldLazyLoad(false));
 
 
         return $fields;
