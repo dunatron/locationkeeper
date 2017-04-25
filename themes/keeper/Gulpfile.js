@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 var config = {
-    bootstrapDir: './bower_components/bootstrap-sass',
+    bootstrapDir: './node_modules/bootstrap-sass',
     publicDir: './public',
 };
 

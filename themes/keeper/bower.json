@@ -1,4 +1,4 @@
-{
+sudo npm install gulp-bower-update-all --save-dev{
   "name": "keeper",
   "description": "",
   "main": "",

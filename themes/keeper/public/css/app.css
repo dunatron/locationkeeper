@@ -6453,3 +6453,8 @@ h1 {
       font-size: 20px; }
   .ProjectPage .tab-content #uat .ssh-details {
     font-size: 20px; }
+
+.search-results-wrapper {
+  display: flex; }
+  .search-results-wrapper .result-item {
+    max-width: 450px; }
