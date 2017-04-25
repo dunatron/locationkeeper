@@ -14,4 +14,16 @@ class CodeTag extends DataObject
     private static $belongs_many_many = array(
         'Codes' => 'Code'
     );
+
+    private static $create_table_options = array(
+        'MySQLDatabase' =>  'ENGINE=MyISAM'
+    );
+
+    private static $indexes = array(
+        'SearchFields'  =>  array(
+            'type'  =>  'fulltext',
+            'name'  =>  'SearchFields',
+            'value' =>  'Title',
+        )
+    );
 }

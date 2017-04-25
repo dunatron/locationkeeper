@@ -41,7 +41,7 @@ class Code extends DataObject
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $fields->addFieldToTab('Root.Main', TagField::create(
+        $fields->addFieldToTab('Root.CodeTags', TagField::create(
             'CodeTags',
             'Code Tags',
             CodeTag::get(),
