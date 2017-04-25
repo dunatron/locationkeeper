@@ -5,11 +5,13 @@
 .search-results-wrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   height: 80vh;
+  @media screen and (min-width: $break-medium) {
+    flex-direction: column;
+  }
   .result-item {
     flex-grow: 1;
-    max-width: 450px;
     margin: 15px;
     padding: 15px;
     border: 1px solid $c_samdog_blue;
