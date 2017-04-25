@@ -6457,4 +6457,7 @@ h1 {
 .search-results-wrapper {
   display: flex; }
   .search-results-wrapper .result-item {
-    max-width: 450px; }
+    max-width: 450px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #4da7ca; }
