@@ -33,6 +33,10 @@ Event:
   extensions:
     - MyISAMExtension
 
+CodeTag:
+  extensions:
+    - MyISAMExtension
+
 File:
   extensions:
     - MyISAMExtension
