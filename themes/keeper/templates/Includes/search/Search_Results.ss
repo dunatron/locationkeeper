@@ -1,5 +1,5 @@
 <% loop $Results %>
-    <div class="result-item">
+    <div class="result-item col-md-4">
         <h1>$Title</h1>
         <div class="desc contextsummary">
             $Desc.ContextSummary(300)
