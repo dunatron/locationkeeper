@@ -72,7 +72,7 @@ class Page_Controller extends ContentController
 
         $index = new LocationKeeperSolrIndex();
         $query = new SearchQuery();
-        //$query->inClass('Code');
+        $query->inClass('Code');
 
         $query->search($Search);
 
