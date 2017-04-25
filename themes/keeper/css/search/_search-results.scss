@@ -12,8 +12,14 @@
   }
   .result-item {
     flex-grow: 1;
-    margin: 15px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     border: 1px solid $c_samdog_blue;
+    background-color: $c_lightcyan;
+    max-width: 850px;
+    h1 {
+      font-size: 20px;
+      color: $c_samdog_red;
+    }
   }
 }
