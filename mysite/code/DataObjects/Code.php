@@ -10,7 +10,8 @@ class Code extends DataObject
 {
     private static $db = array(
         'Title' => 'Text',
-        'Desc' => 'HTMLText'
+        'Desc' => 'HTMLText',
+        'Tags'  =>  'Text'
     );
 
     private static $create_table_options = array(
@@ -41,12 +42,19 @@ class Code extends DataObject
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $fields->addFieldToTab('Root.CodeTags', TagField::create(
-            'CodeTags',
-            'Code Tags',
-            CodeTag::get(),
-            $this->CodeTags()
-        )->setShouldLazyLoad(true)->setCanCreate(true));
+//        $fields->addFieldToTab('Root.CodeTags', TagField::create(
+//            'CodeTags',
+//            'Code Tags',
+//            CodeTag::get(),
+//            $this->CodeTags()
+//        )->setShouldLazyLoad(true)->setCanCreate(true));
+        $fields->addFieldToTab('Root.Main', StringTagField::create(
+        'Tags',
+        'Tags',
+        array('one', 'two'),
+        explode(',', $this->Tags))->setShouldLazyLoad(true)->setCanCreate(true));
+
+
         return $fields;
     }
 
