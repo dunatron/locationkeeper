@@ -157,10 +157,10 @@ class Page_Controller extends ContentController
 
         $code->write();
 
-        $messageResponse = 'thankyou for the '.$Title.' code submission';
+        $messageResponse = 'thankyou for the <span class="message-code-title">'.$Title.'</span> code submission';
 
         //return $this->redirectBack();
-        return '<p id="Message" class="message good" style="display: block">'.$messageResponse.'</p>';
+        return '<p id="MessageCodeAddSuccess" class="message good" style="display: block">'.$messageResponse.'</p>';
     }
 
 }
