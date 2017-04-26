@@ -137,26 +137,8 @@ class Page_Controller extends ContentController
         return $data ? $form->loadDataFrom($data) : $form;
     }
 
-//    public function doCreateCode($data, $form)
-//    {
-//        error_log(var_export($form, true));
-//        Session::set("FormData.{$form->getName()}.data", $data);
-//        $code = Code::create();
-//
-//        $form->saveInto($code);
-//        $code->write();
-//
-//        Session::clear("FormData.{$form->getName()}.data");
-//        $form->sessionMessage('Thanks for your code submission!','good');
-//
-//        return $this->redirectBack();
-//    }
-
     public function doCreateCode()
     {
-
-
-        $code = Code::create();
 
         $Title = NULL;
         $Html = NULL;
@@ -168,14 +150,17 @@ class Page_Controller extends ContentController
             $Html = $_POST['Html'];
         }
 
-        error_log('wow');
-        error_log(var_export($Html, true));
+        $code = Code::create();
+
         $code->Title = $Title;
         $code->Desc = $Html;
 
         $code->write();
 
-        return $this->redirectBack();
+        $messageResponse = 'thankyou for the '.$Title.' code submission';
+
+        //return $this->redirectBack();
+        return '<p id="Form_UploadCodeForm_error" class="message good" style="display: block">'.$messageResponse.'</p>';
     }
 
 }
