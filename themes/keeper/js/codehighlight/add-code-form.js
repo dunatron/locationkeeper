@@ -27,7 +27,7 @@ $( document ).ready(function() {
             },
             success: function (response) {
                 console.log(response);
-                $('#Form_UploadCodeForm_error').html(response);
+                $('#Form_UploadCodeForm_error').replaceWith(response);
             },
             complete: function(){
         
