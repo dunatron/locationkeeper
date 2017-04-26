@@ -17,9 +17,26 @@
           href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="$ThemeDir/public/css/app.css"/>
+    <%--<link rel="stylesheet" type="text/css" href="$ThemeDir/public/css/app.css"/>--%>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ofayo7pakzulvwp4rzxfgb9ce6gzk3fqaah82rahrbild2bd"></script>
+    <script>tinymce.init({
+        selector:'textarea#Form_UploadCodeForm_Desc',
+        plugins: "codesample",
+        codesample_languages: [
+            {text: 'HTML/XML', value: 'markup'},
+            {text: 'JavaScript', value: 'javascript'},
+            {text: 'CSS', value: 'css'},
+            {text: 'PHP', value: 'php'},
+            {text: 'Ruby', value: 'ruby'},
+            {text: 'Python', value: 'python'},
+            {text: 'Java', value: 'java'},
+            {text: 'C', value: 'c'},
+            {text: 'C#', value: 'csharp'},
+            {text: 'C++', value: 'cpp'}
+        ],
+        toolbar: "codesample"
+    });</script>
 
 </head>
 <body class="$ClassName">
@@ -64,9 +81,9 @@
     </div>
 </div>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
+<%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"--%>
+        <%--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"--%>
+        <%--crossorigin="anonymous"></script>--%>
 
 </body>
 </html>

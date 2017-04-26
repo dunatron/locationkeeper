@@ -23,6 +23,10 @@
             <div class="search-bar">
                 $SearchForm
             </div>
+            <div class="add-code-btn">
+                <a href="#" class="foot-link" data-toggle="modal" data-target="#AddCodeModal">Add Code</a>
+                <% include AddCodeModal %>
+            </div>
             $search
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

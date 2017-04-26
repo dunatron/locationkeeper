@@ -28,7 +28,9 @@ class Page_Controller extends ContentController
      */
     private static $allowed_actions = array(
         'CodeSearchForm',
-        'searchCode'
+        'searchCode',
+        'UploadCodeForm',
+        'doCreateCode'
     );
 
     public function init()
@@ -36,9 +38,13 @@ class Page_Controller extends ContentController
         parent::init();
         // You can include any CSS or JS required by your project here.
         // See: http://doc.silverstripe.org/framework/en/reference/requirements
+        Requirements::css($this->ThemeDir() . "/public/css/app.css");
+        Requirements::css($this->ThemeDir() . "/public/css/codehighlight/prism.css");
         Requirements::set_force_js_to_bottom(true);
         Requirements::javascript('http://code.jquery.com/jquery-2.1.4.min.js');
         Requirements::javascript('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+        Requirements::javascript($this->ThemeDir() . "/js/codehighlight/prism.js");
+        Requirements::javascript($this->ThemeDir() . "/js/codehighlight/add-code-form.js");
         Requirements::javascript($this->ThemeDir() . "/js/search/code-search.js");
 
     }
@@ -92,10 +98,6 @@ class Page_Controller extends ContentController
             }
         }
 
-        error_log(var_export($Search, true));
-        error_log(var_export($ResultsList, true));
-
-
         $searchData = ArrayData::create(array(
             'Results' => $ResultsList,
             'KeyWord' => $Search,
@@ -120,7 +122,7 @@ class Page_Controller extends ContentController
         );
 
         $actions = FieldList::create(
-            FormAction::create('doFrontEndEvent', 'Submit')->addExtraClass('FormClass')
+            FormAction::create('doCreateCode', 'Submit')->addExtraClass('FormClass')
                 ->setUseButtonTag(true)->addExtraClass('button')
         );
 
@@ -128,12 +130,52 @@ class Page_Controller extends ContentController
             'Title'
         ));
 
-        $form = Form::create($this, 'doCreateCode', $fields, $actions, $required);
-        $form->setTemplate('CustomEventForm');
+        $form = Form::create($this, 'UploadCodeForm', $fields, $actions, $required);
 
         //return $form;
         $data = Session::get("FormData.{$form->getName()}.data");
         return $data ? $form->loadDataFrom($data) : $form;
+    }
+
+//    public function doCreateCode($data, $form)
+//    {
+//        error_log(var_export($form, true));
+//        Session::set("FormData.{$form->getName()}.data", $data);
+//        $code = Code::create();
+//
+//        $form->saveInto($code);
+//        $code->write();
+//
+//        Session::clear("FormData.{$form->getName()}.data");
+//        $form->sessionMessage('Thanks for your code submission!','good');
+//
+//        return $this->redirectBack();
+//    }
+
+    public function doCreateCode()
+    {
+
+
+        $code = Code::create();
+
+        $Title = NULL;
+        $Html = NULL;
+        if (isset($_POST['Title'])) {
+            $Title = $_POST['Title'];
+        }
+
+        if (isset($_POST['Html'])) {
+            $Html = $_POST['Html'];
+        }
+
+        error_log('wow');
+        error_log(var_export($Html, true));
+        $code->Title = $Title;
+        $code->Desc = $Html;
+
+        $code->write();
+
+        return $this->redirectBack();
     }
 
 }

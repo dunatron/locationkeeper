@@ -4,4 +4,5 @@ After: framework/routes#coreroutes
 ---
 Director:
   rules:
-    'search//$Action/$ID' : 'Page_Controller'
+    'search//$Action/$ID' : 'Page_Controller',
+    'pagefunction//$Action/$ID'  : 'Page_Controller'

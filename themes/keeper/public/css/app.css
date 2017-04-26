@@ -6489,15 +6489,3 @@ h1 {
       font-size: 20px;
       margin-top: 0;
       color: #f0523f; }
-    .search-results-wrapper .result-item .desc pre {
-      display: block;
-      padding: 9.5px;
-      margin: 0 0 10px;
-      font-size: 13px;
-      line-height: 1.42857;
-      word-break: break-all;
-      word-wrap: break-word;
-      color: #b1b1b1;
-      background-color: #000000;
-      border: 8px solid #fff;
-      border-radius: 0; }
