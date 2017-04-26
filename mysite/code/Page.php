@@ -104,4 +104,36 @@ class Page_Controller extends ContentController
         return $this->owner->customise($searchData)->renderWith('Search_Results');
     }
 
+    public function UploadCodeForm()
+    {
+
+        $Title = TextField::create('Title', 'Title of Code Piece')->addExtraClass('required-field');
+
+        $Description = HtmlEditorField::create('Desc', 'Description')->addExtraClass('required-field');
+
+        $Tags = TagField::create('Tags', 'Tags field');
+
+        
+
+        $fields = FieldList::create(
+            $Title, $Description, $Tags
+        );
+
+        $actions = FieldList::create(
+            FormAction::create('doFrontEndEvent', 'Submit')->addExtraClass('FormClass')
+                ->setUseButtonTag(true)->addExtraClass('button')
+        );
+
+        $required = new RequiredFields(array(
+            'Title'
+        ));
+
+        $form = Form::create($this, 'doCreateCode', $fields, $actions, $required);
+        $form->setTemplate('CustomEventForm');
+
+        //return $form;
+        $data = Session::get("FormData.{$form->getName()}.data");
+        return $data ? $form->loadDataFrom($data) : $form;
+    }
+
 }
