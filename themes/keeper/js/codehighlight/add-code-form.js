@@ -4,13 +4,18 @@
 $( document ).ready(function() {
     var AddCodeBtn  = $('#Form_UploadCodeForm_action_doCreateCode'),
         TitleField = $('#Form_UploadCodeForm_Title'),
-        ContentBody = $('.mce-content-body');
+        ContentBody = $('[data-id="Form_UploadCodeForm_Desc"]');
     $(AddCodeBtn).on('click', function(e){
         e.preventDefault();
         
-        var title = (TitleField).val(),
-            html = (ContentBody).html(),
+        var title = $(TitleField).val(),
+            html = $('#Form_UploadCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML,
             url = window.location.href;
+
+        //var test = $('#Form_UploadCodeForm_Desc_ifr').clone().wrapAll("<div />").parent().get(0).innerHTML;
+
+        // console.log(tinyMCE.activeEditor.getContent());
+        // console.log($('#Form_UploadCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML);
         
         $.ajax({
             type:"POST",
@@ -24,11 +29,12 @@ $( document ).ready(function() {
                 console.log(response);
             },
             complete: function(){
-
+        
             },
             error: function(){
-
+        
             }
         });
     });
+    
 });
