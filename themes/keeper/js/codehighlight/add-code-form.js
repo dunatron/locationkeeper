@@ -27,7 +27,8 @@ $( document ).ready(function() {
             },
             success: function (response) {
                 console.log(response);
-                $('#Form_UploadCodeForm_error').replaceWith(response);
+                $('#Form_UploadCodeForm_error').css('display', 'block');
+                $('#Form_UploadCodeForm_error').html(response);
             },
             complete: function(){
         

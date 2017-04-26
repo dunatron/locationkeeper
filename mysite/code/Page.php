@@ -160,7 +160,7 @@ class Page_Controller extends ContentController
         $messageResponse = 'thankyou for the '.$Title.' code submission';
 
         //return $this->redirectBack();
-        return '<p id="Form_UploadCodeForm_error" class="message good" style="display: block">'.$messageResponse.'</p>';
+        return '<p id="Message" class="message good" style="display: block">'.$messageResponse.'</p>';
     }
 
 }
