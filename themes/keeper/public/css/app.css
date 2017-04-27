@@ -6489,3 +6489,9 @@ h1 {
       font-size: 20px;
       margin-top: 0;
       color: #f0523f; }
+
+#Form_UploadCodeForm fieldset #Form_UploadCodeForm_Tags_Holder .select2-container {
+  width: 100% !important;
+  max-width: none !important; }
+  #Form_UploadCodeForm fieldset #Form_UploadCodeForm_Tags_Holder .select2-container .select2-selection__choice {
+    min-height: 20px !important; }

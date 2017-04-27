@@ -1,0 +1,17 @@
+#Form_UploadCodeForm {
+  fieldset {
+    // Tags holder
+    #Form_UploadCodeForm_Tags_Holder {
+      .select2-container {
+        width: 100% !important;
+        max-width: none !important;
+        .select2-selection__choice {
+          min-height: 20px !important;
+        }
+      }
+    }
+  }
+  .Actions {
+
+  }
+}
