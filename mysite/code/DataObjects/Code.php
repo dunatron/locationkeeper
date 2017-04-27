@@ -22,7 +22,7 @@ class Code extends DataObject
         'SearchFields'  =>  array(
             'type'  =>  'fulltext',
             'name'  =>  'SearchFields',
-            'value' =>  '"Title", "Desc"',
+            'value' =>  '"Title", "Desc", "Tags"',
         )
     );
 
@@ -69,6 +69,7 @@ class Code extends DataObject
     private static $summary_fields = array(
         'Title' => 'Title',
         'Desc' => 'Desc',
+        'Tags' => 'Tags'
     );
 
 }

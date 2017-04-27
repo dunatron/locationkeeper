@@ -113,7 +113,8 @@ class Page_Controller extends ContentController
 
         $Description = HtmlEditorField::create('Desc', 'Description')->addExtraClass('required-field');
 
-        $Tags = TagField::create('Tags', 'Tags field');
+        $Tags = StringTagField::create('Tags', 'Tags field',
+            CodeTag::get()->map('ID', 'Title')->toArray());
 
         
 

@@ -11,14 +11,12 @@ $(document).ready(function () {
         e.preventDefault();
 
         var browserurl =   window.location.href,
-            url = browserurl,
             keyword = $('#Form_CodeSearchForm_keyword').val();
 
         //alert(url);
         $.ajax({
             type:"POST",
-            url: url + '/searchCode',
-            //url: url,
+            url: '/pagefunction/searchCode',
             data: {Keyword:keyword},
             success: function (response) {
                 $('.search-results-wrapper').html(response);
