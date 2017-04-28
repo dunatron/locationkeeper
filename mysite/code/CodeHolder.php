@@ -73,11 +73,53 @@ class CodeHolder_Controller extends Page_Controller
      * );
      * @var array
      */
-    private static $allowed_actions = array();
+    private static $allowed_actions = array(
+        'EditCodeForm',
+        'doCodeEdit'
+    );
 
     public function init()
     {
         parent::init();
+    }
+
+    public function EditCodeForm()
+    {
+        $TitleField = TextField::create('Title', 'Code Title');
+        $DescField  = HtmlEditorField::create('Desc', 'Description');
+        $Tags = StringTagField::create('Tags', 'Tags field',
+            CodeTag::get()->map('ID', 'Title')->toArray());
+
+        $fields = FieldList::create(
+            $TitleField, $DescField, $Tags
+        );
+
+        $actions = FieldList::create(
+            FormAction::create('doCodeEdit', 'Save')->addExtraClass('code-save-btn')
+        );
+
+        $form = Form::create($this, 'EditCodeForm', $fields, $actions);
+
+        return $form;
+    }
+
+    public function doCodeEdit($data, $form = '')
+    {
+        $CodeID = NULL;
+        if (isset($data['CodeID'])) {
+            $CodeID = $data['CodeID'];
+        }
+
+        $code = Code::get()->byID($CodeID);
+
+        $formData = new stdClass();
+        $formData->Title = $code->Title;
+        $formData->Desc = $code->Desc;
+        $formData->Tags = $code->Tags;
+
+        $encodeCode = json_encode($formData);
+
+        return $encodeCode;
     }
 
 }

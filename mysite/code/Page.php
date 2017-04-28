@@ -30,7 +30,9 @@ class Page_Controller extends ContentController
         'CodeSearchForm',
         'searchCode',
         'UploadCodeForm',
-        'doCreateCode'
+        'doCreateCode',
+        'EditCodeForm',
+        'doCodeEdit'
     );
 
     public function init()
@@ -46,6 +48,7 @@ class Page_Controller extends ContentController
         Requirements::javascript($this->ThemeDir() . "/js/codehighlight/prism.js");
         Requirements::javascript($this->ThemeDir() . "/js/codehighlight/add-code-form.js");
         Requirements::javascript($this->ThemeDir() . "/js/search/code-search.js");
+        Requirements::javascript($this->ThemeDir() . "/js/code/edit-code-form.js");
 
     }
 

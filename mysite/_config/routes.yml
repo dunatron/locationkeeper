@@ -6,3 +6,4 @@ Director:
   rules:
     'search//$Action/$ID' : 'Page_Controller',
     'pagefunction//$Action/$ID'  : 'Page_Controller'
+    'codeHolderFunction//$Action/$ID'  : 'CodeHolder_Controller'

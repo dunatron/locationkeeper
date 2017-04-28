@@ -20,23 +20,23 @@
     <%--<link rel="stylesheet" type="text/css" href="$ThemeDir/public/css/app.css"/>--%>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ofayo7pakzulvwp4rzxfgb9ce6gzk3fqaah82rahrbild2bd"></script>
-    <script>tinymce.init({
-        selector:'textarea#Form_UploadCodeForm_Desc',
-        plugins: "codesample",
-        codesample_languages: [
-            {text: 'HTML/XML', value: 'markup'},
-            {text: 'JavaScript', value: 'javascript'},
-            {text: 'CSS', value: 'css'},
-            {text: 'PHP', value: 'php'},
-            {text: 'Ruby', value: 'ruby'},
-            {text: 'Python', value: 'python'},
-            {text: 'Java', value: 'java'},
-            {text: 'C', value: 'c'},
-            {text: 'C#', value: 'csharp'},
-            {text: 'C++', value: 'cpp'}
-        ],
-        toolbar: "codesample"
-    });</script>
+    <%--<script>tinymce.init({--%>
+        <%--selector:'textarea#Form_UploadCodeForm_Desc',--%>
+        <%--plugins: "codesample",--%>
+        <%--codesample_languages: [--%>
+            <%--{text: 'HTML/XML', value: 'markup'},--%>
+            <%--{text: 'JavaScript', value: 'javascript'},--%>
+            <%--{text: 'CSS', value: 'css'},--%>
+            <%--{text: 'PHP', value: 'php'},--%>
+            <%--{text: 'Ruby', value: 'ruby'},--%>
+            <%--{text: 'Python', value: 'python'},--%>
+            <%--{text: 'Java', value: 'java'},--%>
+            <%--{text: 'C', value: 'c'},--%>
+            <%--{text: 'C#', value: 'csharp'},--%>
+            <%--{text: 'C++', value: 'cpp'}--%>
+        <%--],--%>
+        <%--toolbar: "codesample"--%>
+    <%--});</script>--%>
 
 </head>
 <body class="$ClassName">

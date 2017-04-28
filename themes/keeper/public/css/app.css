@@ -6328,6 +6328,9 @@ a {
   a:hover {
     color: #66AD28; }
 
+.select2-container--default {
+  width: 100% !important; }
+
 .navbar .navbar-header .navbar-brand {
   padding: 0; }
   .navbar .navbar-header .navbar-brand img {
@@ -6484,7 +6487,8 @@ h1 {
     padding: 10px;
     border: 1px solid #4da7ca;
     background-color: lightcyan;
-    max-width: 850px; }
+    max-width: 850px;
+    overflow-y: scroll; }
     .search-results-wrapper .result-item h1 {
       font-size: 20px;
       margin-top: 0;
