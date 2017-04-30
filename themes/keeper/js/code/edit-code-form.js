@@ -3,17 +3,22 @@
  */
 $( document ).ready(function() {
     var EditCodeBtn  = $('#EditCodeBtn'),
+        SaveCodeBtn = $('#Form_EditCodeForm_action_doCodeEdit'),
+        EditModal = $('#EditCodeModal'),
         TitleField = $('#Form_EditCodeForm_Title'),
-        TagField = $(''),
-        ContentBody = $('[data-id="Form_UploadCodeForm_Desc"]');
+        TagField = $('#Form_EditCodeForm_Tags')
+        CodeIDGlobal = '';
 
     $(document).on('click', "#EditCodeBtn", function (e) {
         e.preventDefault();
+        var CodeID = $(this).attr('data-id'),
+            ContentBody = $('#Form_EditCodeForm_Desc_ifr');
 
-        var CodeID = $(this).attr('data-id');
+        CodeIDGlobal = CodeID;
 
+        // Clear content before loading new content
         tinyMCE.activeEditor.setContent('');
-        // console.log($('#Form_UploadCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML);
+        //console.log($(ContentBody)[0].contentDocument.body.innerHTML);
 
         $.ajax({
             type:"POST",
@@ -37,52 +42,49 @@ $( document ).ready(function() {
     });
 
     function loadCodeTags(tagsString) {
-        //console.log(tagsString);
-
-        var String = tagsString.split(',');
-        var CurrTAGS = [],
-            AllTags = [],
-            Length = String.length;
-
-        $('select').select2('open');
-
-
-        for (var i = 0; i < Length; i++)
-        {
-            CurrTAGS.push(String[i]);
+        if(tagsString){
+            $(TagField).select2("val", tagsString.split(','));
+        } else {
+            $(TagField).select2("val", '');
         }
-
-        console.log(CurrTAGS);
-
-
-        // $('#select2-results__options option').each(function()
-        // {
-        //     AllTags.push($(this).val());
-        // });
-
-        $('#select2-Form_UploadCodeForm_Tags-results li').each(function()
-        {
-            //AllTags.push($(this).val());
-            console.log($(this).text());
-
-            var DropDownItem = $(this);
-           // var DropDownItem = $("<div />").append($(this).clone()).html();
-
-            console.log(DropDownItem);
-
-            if(jQuery.inArray( $(this).text(), CurrTAGS ))
-            {
-                console.log('time to fake the unfakable');
-                $(DropDownItem).trigger('click');
-            }
-
-
-        });
-
-
-
-
     }
+
+    $(SaveCodeBtn).on('click', function(e){
+        e.preventDefault();
+        //alert($(TagField).select2("val"));
+        alert(CodeIDGlobal);
+
+        var title = $(TitleField).val(),
+            html = $('#Form_UploadCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML,
+            tags = $(TagField).select2("val");
+
+        $.ajax({
+            type:"POST",
+            url: '/codeHolderFunction/updateCode',
+
+            data: {
+                CodeID:CodeIDGlobal,
+                Title:title,
+                Html:html,
+                Tags:tags
+            },
+
+
+            success: function (response) {
+                alert(response)
+            },
+            complete: function(response){
+                alert('complete')
+            },
+            error: function(response){
+                alert('error')
+            }
+        });
+    });
+
+    $(EditModal).on('hidden.bs.modal', function () {
+        ClearEditCodeForm('#Form_EditCodeForm_Desc');
+    });
 
     tinymce.init({
         selector:'textarea#Form_EditCodeForm_Desc',
@@ -102,6 +104,10 @@ $( document ).ready(function() {
         toolbar: "codesample"
     });
 
-
+    function ClearEditCodeForm()
+    {
+        $(TagField).select2('val', '');
+        $(TitleField).val('');
+    }
 
 });

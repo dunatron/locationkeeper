@@ -75,7 +75,8 @@ class CodeHolder_Controller extends Page_Controller
      */
     private static $allowed_actions = array(
         'EditCodeForm',
-        'doCodeEdit'
+        'doCodeEdit',
+        'updateCode'
     );
 
     public function init()
@@ -121,6 +122,12 @@ class CodeHolder_Controller extends Page_Controller
 
         return $encodeCode;
     }
+
+    public function updateCode()
+    {
+        return 'Code has been updated';
+    }
+
 
 }
 
