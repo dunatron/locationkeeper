@@ -12,6 +12,8 @@
     }
   }
   .Actions {
-
+    #Form_UploadCodeForm_action_doCreateCode {
+      @include Submit_Btn;
+    }
   }
 }

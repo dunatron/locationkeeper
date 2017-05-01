@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default locationkeeper-nav">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -18,16 +18,10 @@
                 <% loop $Menu(1) %>
                     <li><a class="$LinkingMode" href="$Link" title="$Go to the $Title page">$MenuTitle</a></li>
                 <% end_loop %>
-            </ul>
-            <%-- Search Bar --%>
-            <div class="search-bar">
-                $SearchForm
-            </div>
-            <div class="add-code-btn">
-                <a href="#" class="foot-link" data-toggle="modal" data-target="#AddCodeModal">Add Code</a>
+                <li><a href="#" class="foot-link" data-toggle="modal" data-target="#AddCodeModal">Add Code</a></li>
                 <% include AddCodeModal %>
-            </div>
-            $search
+            </ul>
+
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

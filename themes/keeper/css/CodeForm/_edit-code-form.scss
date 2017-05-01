@@ -1,0 +1,18 @@
+#Form_EditCodeForm {
+  fieldset {
+    // Tags holder
+    .select2-container {
+      width: 100% !important;
+      max-width: none !important;
+      .select2-selection__choice {
+        min-height: 20px !important;
+      }
+    }
+  }
+
+  .Actions {
+    .code-save-btn {
+      @include Submit_Btn;
+    }
+  }
+}

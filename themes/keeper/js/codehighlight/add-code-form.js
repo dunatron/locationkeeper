@@ -54,6 +54,7 @@ $( document ).ready(function() {
             {text: 'C#', value: 'csharp'},
             {text: 'C++', value: 'cpp'}
         ],
+        content_css : '/themes/public/css/tinyMCE.css',
         toolbar: "codesample"
     });
 

@@ -6,7 +6,7 @@ $( document ).ready(function() {
         SaveCodeBtn = $('#Form_EditCodeForm_action_doCodeEdit'),
         EditModal = $('#EditCodeModal'),
         TitleField = $('#Form_EditCodeForm_Title'),
-        TagField = $('#Form_EditCodeForm_Tags')
+        TagField = $('#Form_EditCodeForm_Tags'),
         CodeIDGlobal = '';
 
     $(document).on('click', "#EditCodeBtn", function (e) {
@@ -18,7 +18,6 @@ $( document ).ready(function() {
 
         // Clear content before loading new content
         tinyMCE.activeEditor.setContent('');
-        //console.log($(ContentBody)[0].contentDocument.body.innerHTML);
 
         $.ajax({
             type:"POST",
@@ -27,7 +26,6 @@ $( document ).ready(function() {
             data: {CodeID:CodeID},
 
             success: function (response) {
-                //console.log(response);
                 $(TitleField).val(response['Title']);
                 tinymce.get("Form_EditCodeForm_Desc").execCommand('mceInsertContent', false, response['Desc']);
                 loadCodeTags(response['Tags']);
@@ -51,12 +49,10 @@ $( document ).ready(function() {
 
     $(SaveCodeBtn).on('click', function(e){
         e.preventDefault();
-        //alert($(TagField).select2("val"));
-        alert(CodeIDGlobal);
 
-        var title = $(TitleField).val(),
-            html = $('#Form_UploadCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML,
-            tags = $(TagField).select2("val");
+        var title = $('#Form_EditCodeForm_Title').val(),
+            html = $('#Form_EditCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML,
+            tags = $('#Form_EditCodeForm_Tags').select2("val");
 
         $.ajax({
             type:"POST",
@@ -69,15 +65,14 @@ $( document ).ready(function() {
                 Tags:tags
             },
 
-
             success: function (response) {
-                alert(response)
+                alert(response);
             },
             complete: function(response){
-                alert('complete')
+
             },
             error: function(response){
-                alert('error')
+
             }
         });
     });

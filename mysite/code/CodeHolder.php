@@ -96,7 +96,7 @@ class CodeHolder_Controller extends Page_Controller
         );
 
         $actions = FieldList::create(
-            FormAction::create('doCodeEdit', 'Save')->addExtraClass('code-save-btn')
+            FormAction::create('doCodeEdit', 'Save')->addExtraClass('code-save-btn')->setUseButtonTag(true)->addExtraClass('button')
         );
 
         $form = Form::create($this, 'EditCodeForm', $fields, $actions);
@@ -110,22 +110,40 @@ class CodeHolder_Controller extends Page_Controller
         if (isset($data['CodeID'])) {
             $CodeID = $data['CodeID'];
         }
-
         $code = Code::get()->byID($CodeID);
-
         $formData = new stdClass();
         $formData->Title = $code->Title;
         $formData->Desc = $code->Desc;
         $formData->Tags = $code->Tags;
-
         $encodeCode = json_encode($formData);
-
         return $encodeCode;
     }
 
-    public function updateCode()
+    public function updateCode($data, $form = '')
     {
-        return 'Code has been updated';
+        $CodeID = NULL; $Title = ''; $Html = ''; $Tags = '';
+        if (isset($data['CodeID'])) {
+            $CodeID = $data['CodeID'];
+        }
+        if (isset($data['Title'])) {
+            $Title = $data['Title'];
+        }
+        if (isset($data['Html'])) {
+            $Html = $data['Html'];
+        }
+        if (isset($data['Tags'])) {
+            $Tags = implode(',', $data['Tags']);
+        }
+
+        $code = Code::get()->byID($CodeID);
+
+        $code->Title = $Title;
+        $code->Desc = $Html;
+        $code->Tags = $Tags;
+
+        $code->write();
+
+        return $code->Title .' Has been updated';
     }
 
 

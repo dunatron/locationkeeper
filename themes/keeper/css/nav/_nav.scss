@@ -1,4 +1,11 @@
-.navbar {
+.locationkeeper-nav {
+  min-height: $nav_min_height;
+  margin-bottom: $nav_margin_bottom;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: $nav_border;
+  border-left: none;
   .navbar-header {
     .navbar-brand {
       padding: 0;

@@ -167,4 +167,13 @@ class Page_Controller extends ContentController
         return '<p id="MessageCodeAddSuccess" class="message good" style="display: block">'.$messageResponse.'</p>';
     }
 
+    /**
+     * SVG Icons
+     */
+    public function getEditSVGIcon()
+    {
+        $theme = $this->ThemeDir();
+        return file_get_contents('../' . $theme . '/images/svg/edit.svg');
+    }
+
 }

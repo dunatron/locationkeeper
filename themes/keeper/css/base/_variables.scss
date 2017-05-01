@@ -4,6 +4,8 @@ $c_samdog_orange: #fbbc40;
 $c_samdog_blue: #4da7ca;
 $c_samdog_red:#f0523f;
 
+$c_dark_grey:#384242;
+
 $c_lightcyan:lightcyan;
 
 
@@ -19,3 +21,15 @@ $font_GustanLight: GustanLight;
 $font_GustanMedium: GustanMedium;
 $font_GustanMediumD: GustanMediumD;
 $font_GustanBold: GustanBold;
+
+// NavBar
+$nav_min_height:50px;
+$nav_margin_bottom:20px;
+$nav_border_thickness:1px;
+$nav_border: 1px solid $c_samdog_red;
+
+// Code Search Bar
+$code_search_bar_minHeight:65px;
+
+// Search Results
+$c_results_background:$c_dark_grey;

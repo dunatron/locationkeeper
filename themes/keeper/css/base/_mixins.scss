@@ -23,6 +23,20 @@
   background-position: center center;              /* optional, center the image */
 }
 
+@mixin Submit_Btn {
+  background-color: #fff;
+  border: 1px #000 solid;
+  padding: 15px 40px 15px 40px;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  text-decoration: none;
+}
+
 // position and size of on/off moble nav btns
 
 @mixin content {

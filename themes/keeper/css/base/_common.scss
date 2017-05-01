@@ -33,3 +33,42 @@ a {
 .select2-container--default {
   width: 100% !important;
 }
+
+// SVG Icons
+.edit-svg {
+  height: 32px;
+  fill: $c_samdog_orange;
+}
+
+.field {
+  margin-top: 10px;
+}
+
+input {
+  border: 1px #000 solid;
+  border-radius: 0;
+  //height: 35px;
+  padding: 10px;
+  width: 100%;
+}
+
+.mce-content-body {
+  margin: 20px;
+}
+
+.mce-container.mce-menubar.mce-toolbar.mce-stack-layout-item.mce-first {
+  border-color: #000;
+}
+
+.mce-toolbar-grp.mce-container.mce-panel.mce-stack-layout-item {
+  border-bottom: 1px #000 solid;
+}
+
+.mce-tinymce.mce-container.mce-panel {
+  border: 1px #000 solid;
+  border-radius: 0;
+}
+
+.mce-statusbar.mce-container.mce-panel.mce-stack-layout-item {
+  border-color: #000;
+}

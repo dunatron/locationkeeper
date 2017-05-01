@@ -1,5 +1,6 @@
 .code-search-bar {
   padding: 0 10px 10px 10px;
+  min-height: $code_search_bar_minHeight;
   #Form_CodeSearchForm {
     display: flex;
     align-items: center;
@@ -27,7 +28,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 80vh;
+  //height: 80vh;
+  height: calc(100vh - #{$code_search_bar_minHeight + $nav_min_height + $nav_margin_bottom + $nav_border_thickness});
   @media screen and (min-width: $break-medium) {
     flex-direction: column;
   }
@@ -35,29 +37,26 @@
     flex-grow: 1;
     margin: 10px;
     padding: 10px;
-    border: 1px solid $c_samdog_blue;
-    background-color: $c_lightcyan;
+    border: 2px solid $c_samdog_blue;
+    background-color: $c_results_background;
     max-width: 850px;
     overflow-y: scroll;
     h1 {
       font-size: 20px;
       margin-top: 0;
-      color: $c_samdog_red;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      color: $c_samdog_green;
+      span {
+        padding-left:15px;
+      }
     }
     .desc {
-      //pre {
-      //  display: block;
-      //  padding: 9.5px;
-      //  margin: 0 0 10px;
-      //  font-size: 13px;
-      //  line-height: 1.42857;
-      //  word-break: break-all;
-      //  word-wrap: break-word;
-      //  color: #b1b1b1;
-      //  background-color: #000000;
-      //  border: 8px solid #fff;
-      //  border-radius: 0;
-      //}
+      color: #FFF;
+      pre {
+        border-radius: 0;
+      }
     }
   }
 }
