@@ -144,8 +144,9 @@ class Page_Controller extends ContentController
     public function doCreateCode()
     {
 
-        $Title = NULL;
-        $Html = NULL;
+        $Title = '';
+        $Html = '';
+        $Tags = '';
         if (isset($_POST['Title'])) {
             $Title = $_POST['Title'];
         }
@@ -154,10 +155,15 @@ class Page_Controller extends ContentController
             $Html = $_POST['Html'];
         }
 
+        if (isset($_POST['Tags'])) {
+            $Tags = $_POST['Tags'];
+        }
+
         $code = Code::create();
 
         $code->Title = $Title;
         $code->Desc = $Html;
+        $code->Tags = $Tags;
 
         $code->write();
 

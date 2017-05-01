@@ -6391,6 +6391,7 @@ input {
   border-bottom: 1px solid #f0523f;
   border-left: none; }
   .locationkeeper-nav .navbar-header .svg-key {
+    margin-left: 10px;
     height: 40px;
     position: relative;
     top: 5px;
@@ -6579,6 +6580,7 @@ h1 {
   .search-results-wrapper .search-notes {
     padding: 0 10px 10px 10px; }
   .search-results-wrapper .code-tag {
+    display: inline-block;
     border: 1px solid #000;
     padding: 3px 15px;
     margin: 2px;

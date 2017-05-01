@@ -10,6 +10,7 @@ $( document ).ready(function() {
         
         var title = $(TitleField).val(),
             html = $('#Form_UploadCodeForm_Desc_ifr')[0].contentDocument.body.innerHTML,
+            tags = $('#Form_UploadCodeForm_Tags').select2("val");
             url = window.location.href;
 
         //var test = $('#Form_UploadCodeForm_Desc_ifr').clone().wrapAll("<div />").parent().get(0).innerHTML;
@@ -23,7 +24,8 @@ $( document ).ready(function() {
             // url: url + '/home/doCreateCode',
             data: {
                 Title:title,
-                Html:html
+                Html:html,
+                Tags:tags
             },
             success: function (response) {
                 console.log(response);
