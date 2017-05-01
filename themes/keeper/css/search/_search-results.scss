@@ -19,7 +19,14 @@
       }
     }
     .Actions {
-      padding: 15px 30px;
+      padding: 0;
+      .code-search-btn {
+        border-left:none;
+        min-height: 50px;
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }
@@ -56,6 +63,7 @@
       color: #FFF;
       pre {
         border-radius: 0;
+
       }
     }
   }

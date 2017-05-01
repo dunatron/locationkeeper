@@ -1,6 +1,10 @@
 #Form_EditCodeForm {
   fieldset {
     // Tags holder
+    .field {
+      margin-bottom: 20px;
+    }
+
     .select2-container {
       width: 100% !important;
       max-width: none !important;
@@ -8,6 +12,7 @@
         min-height: 20px !important;
       }
     }
+
   }
 
   .Actions {

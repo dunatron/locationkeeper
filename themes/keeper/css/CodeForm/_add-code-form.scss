@@ -1,5 +1,8 @@
 #Form_UploadCodeForm {
   fieldset {
+    .field {
+      margin-bottom: 20px;
+    }
     // Tags holder
     #Form_UploadCodeForm_Tags_Holder {
       .select2-container {

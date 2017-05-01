@@ -6340,6 +6340,8 @@ input {
   border-radius: 0;
   padding: 10px;
   width: 100%; }
+  input:focus {
+    outline: none; }
 
 .mce-content-body {
   margin: 20px; }
@@ -6356,6 +6358,20 @@ input {
 
 .mce-statusbar.mce-container.mce-panel.mce-stack-layout-item {
   border-color: #000; }
+
+.select2-selection.select2-selection--multiple {
+  border-radius: 0 !important;
+  border: 1px solid #000 !important; }
+  .select2-selection.select2-selection--multiple .select2-selection__rendered {
+    min-height: 40px !important; }
+    .select2-selection.select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+      min-height: 34px !important;
+      height: 34px !important;
+      padding: 6px 20px 6px 10px !important;
+      margin: 6px 0 6px 10px !important;
+      font-size: 18px;
+      display: flex;
+      align-items: center; }
 
 .locationkeeper-nav {
   min-height: 50px;
@@ -6506,7 +6522,12 @@ h1 {
       padding: 5px 10px;
       font-size: 22px; }
     .code-search-bar #Form_CodeSearchForm .Actions {
-      padding: 15px 30px; }
+      padding: 0; }
+      .code-search-bar #Form_CodeSearchForm .Actions .code-search-btn {
+        border-left: none;
+        min-height: 50px; }
+        .code-search-bar #Form_CodeSearchForm .Actions .code-search-btn:focus {
+          outline: none; }
 
 .search-results-wrapper {
   display: flex;
@@ -6538,6 +6559,9 @@ h1 {
       .search-results-wrapper .result-item .desc pre {
         border-radius: 0; }
 
+#Form_UploadCodeForm fieldset .field {
+  margin-bottom: 20px; }
+
 #Form_UploadCodeForm fieldset #Form_UploadCodeForm_Tags_Holder .select2-container {
   width: 100% !important;
   max-width: none !important; }
@@ -6556,6 +6580,9 @@ h1 {
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
   text-decoration: none; }
+
+#Form_EditCodeForm fieldset .field {
+  margin-bottom: 20px; }
 
 #Form_EditCodeForm fieldset .select2-container {
   width: 100% !important;
