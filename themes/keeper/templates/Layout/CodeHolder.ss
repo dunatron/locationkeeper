@@ -24,12 +24,10 @@
             There is A Tag column which collates the tags and adds them as a string separated by the comma
         </p>
         <%-- All Code Tags --%>
-        <p>
-            Common Tags
-            <% loop $getCodeTags %>
-                <span class="code-tag">{$Title}</span>
-            <% end_loop %>
-        </p>
+        <p>Common Tags</p>
+        <% loop $getCodeTags %>
+            <span class="code-tag">{$Title}</span>
+        <% end_loop %>
     </div>
 </div>
 <% include EditCodeModal %>
