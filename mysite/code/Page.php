@@ -168,12 +168,26 @@ class Page_Controller extends ContentController
     }
 
     /**
+     * All CodeTags
+     */
+    public function getCodeTags()
+    {
+        $Tags = CodeTag::get();
+        return $Tags;
+    }
+
+    /**
      * SVG Icons
      */
     public function getEditSVGIcon()
     {
         $theme = $this->ThemeDir();
         return file_get_contents('../' . $theme . '/images/svg/edit.svg');
+    }
+    public function getKeySVGIcon()
+    {
+        $theme = $this->ThemeDir();
+        return file_get_contents('../' . $theme . '/images/svg/key.svg');
     }
 
 }

@@ -9,7 +9,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class="img-responsive" src="$SiteConfig.SiteLogo.URL"> </a>
+            $getKeySVGIcon
+            <%--<a class="navbar-brand" href="#"><img class="img-responsive" src="$SiteConfig.SiteLogo.URL"> </a>--%>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

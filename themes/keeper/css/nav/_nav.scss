@@ -7,6 +7,19 @@
   border-bottom: $nav_border;
   border-left: none;
   .navbar-header {
+
+    .svg-key {
+      height: 40px;
+      position: relative;
+      top: 5px;
+      fill: #000;
+      transition: fill 0.5s ease;
+      &:hover {
+        fill:$c_samdog_red;
+        cursor: pointer;
+      }
+    }
+
     .navbar-brand {
       padding: 0;
       img {
