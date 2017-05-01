@@ -195,5 +195,11 @@ class Page_Controller extends ContentController
         $theme = $this->ThemeDir();
         return file_get_contents('../' . $theme . '/images/svg/key.svg');
     }
+    public function getCrossSVGIcon()
+    {
+        $theme = $this->ThemeDir();
+        return file_get_contents('../' . $theme . '/images/svg/cross.svg');
+    }
+
 
 }

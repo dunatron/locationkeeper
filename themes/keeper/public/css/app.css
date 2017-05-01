@@ -6336,6 +6336,13 @@ a {
   color: #4da7ca; }
   a:hover {
     color: #66AD28; }
+  a:focus {
+    outline: none; }
+
+.navbar-default .navbar-nav li a {
+  color: #4da7ca; }
+  .navbar-default .navbar-nav li a:hover {
+    color: #66AD28; }
 
 .select2-container--default {
   width: 100% !important; }
@@ -6381,6 +6388,26 @@ input {
       font-size: 18px;
       display: flex;
       align-items: center; }
+
+.close {
+  opacity: 1;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .close .svg-cross {
+    height: 36px;
+    padding: 5px;
+    fill: #000; }
+  .close:hover {
+    opacity: 1; }
+    .close:hover .svg-cross {
+      fill: #f0523f; }
+  .close:focus {
+    outline: none; }
+
+.modal-dialog .modal-content {
+  border-radius: 0; }
 
 .locationkeeper-nav {
   min-height: 50px;
@@ -6539,12 +6566,27 @@ h1 {
       height: 50px;
       min-width: 320px;
       padding: 5px 10px;
-      font-size: 22px; }
+      font-size: 22px;
+      color: #66AD28; }
+    .code-search-bar #Form_CodeSearchForm fieldset #Form_CodeSearchForm_keyword_Holder input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #66AD28; }
+    .code-search-bar #Form_CodeSearchForm fieldset #Form_CodeSearchForm_keyword_Holder input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #66AD28; }
+    .code-search-bar #Form_CodeSearchForm fieldset #Form_CodeSearchForm_keyword_Holder input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #66AD28; }
+    .code-search-bar #Form_CodeSearchForm fieldset #Form_CodeSearchForm_keyword_Holder input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #66AD28; }
     .code-search-bar #Form_CodeSearchForm .Actions {
       padding: 0; }
       .code-search-bar #Form_CodeSearchForm .Actions .code-search-btn {
+        background-color: #4da7ca;
         border-left: none;
-        min-height: 50px; }
+        min-height: 50px;
+        padding: 10px 30px; }
         .code-search-bar #Form_CodeSearchForm .Actions .code-search-btn:focus {
           outline: none; }
 

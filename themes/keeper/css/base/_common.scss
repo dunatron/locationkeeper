@@ -28,6 +28,25 @@ a {
   &:hover {
     color: $c_samdog_green;
   }
+  &:focus {
+    outline: none;
+  }
+}
+.navbar-default .navbar-nav > li > a {
+
+}
+
+.navbar-default {
+  .navbar-nav {
+    li {
+      a {
+        color: $c_samdog_blue;
+        &:hover {
+          color: $c_samdog_green;
+        }
+      }
+    }
+  }
 }
 
 .select2-container--default {
@@ -88,5 +107,33 @@ input {
       display: flex;
       align-items: center;
     }
+  }
+}
+
+.close {
+  opacity: 1;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top:0;
+  .svg-cross {
+    height: 36px;
+    padding: 5px;
+    fill: #000;
+  }
+  &:hover {
+    opacity: 1;
+    .svg-cross {
+      fill:$c_samdog_red;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal-dialog {
+  .modal-content {
+    border-radius: 0;
   }
 }

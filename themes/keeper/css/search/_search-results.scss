@@ -15,14 +15,29 @@
           min-width: 320px;
           padding: 5px 10px;
           font-size: 22px;
+          color: $c_samdog_green;
+        }
+        input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: $c_samdog_green;
+        }
+        input::-moz-placeholder { /* Firefox 19+ */
+          color: $c_samdog_green;
+        }
+        input:-ms-input-placeholder { /* IE 10+ */
+          color: $c_samdog_green;
+        }
+        input:-moz-placeholder { /* Firefox 18- */
+          color: $c_samdog_green;
         }
       }
     }
     .Actions {
       padding: 0;
       .code-search-btn {
+        background-color: $c_code_search_btn;
         border-left:none;
         min-height: 50px;
+        padding: 10px 30px;
         &:focus {
           outline: none;
         }

@@ -4,7 +4,7 @@
 <div class="search-results-wrapper">
     <div class="search-notes">
         <%-- Search Notes --%>
-        <h2>Search Notes:</h2>
+        <h2>Search Notes</h2>
         <p>
             The search is using Solr and searches across In The Code Table for Title, Tags, and Desc
             <br />
