@@ -29,15 +29,18 @@
 </div>
     <% include Nav %>
 
-    <% if CurrentMember %>
+<div class="container">
+    <% if $CurrentMember %>
         $Layout
         $Form
     <% else %>
-    <h1>Please login to View Module Resources</h1>
-    <p>Visitors you can view the code search page by logging in with the below credentials</p>
-    <p>visitor@keeper.nz<br />visit</p>
-    <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
+        <h1>Please login to View Module Resources</h1>
+        <p>Visitors you can view the code search page by logging in with the below credentials</p>
+        <p class="visitor-credentials">Email: <span>visitor@keeper.nz</span><br />Password: <span>visit</span></p>
+        <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
     <% end_if %>
+</div>
+
 
 <% include LoginModal %>
 

@@ -25,7 +25,6 @@
                     <% end_loop %>
                 <% else %>
                     $LoginForm
-                    $MyLoginForm
                 <% end_if %>
             </div>
         </div>
