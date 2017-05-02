@@ -40,3 +40,7 @@ CodeTag:
 File:
   extensions:
     - MyISAMExtension
+
+Member:
+  extensions:
+    - KeeperMemberExtension
