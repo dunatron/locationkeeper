@@ -39,32 +39,8 @@
     <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
     <% end_if %>
 
-<!-- Modal -->
-<div id="TronLoginModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Login Form</h4>
-            </div>
-            <div class="modal-body">
-                <% if CurrentMember %>
-                    <% loop CurrentMember %>
-                        <h1>You Are Currently Logged in as</h1>
-                        <h2 id="current-member">$Name</h2>
-                        <a href="$Link">Edit Profile <i class="fa fa-pencil-square-o"></i></a>
-                        <a href="Security/logout">Log in as someone else <i class="fa fa-sign-out"></i></a>
-                    <% end_loop %>
-                <% else %>
-                    $LoginForm
-                <% end_if %>
-            </div>
+<% include LoginModal %>
 
-        </div>
-
-    </div>
-</div>
 
 <%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"--%>
         <%--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"--%>
