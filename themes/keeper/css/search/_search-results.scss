@@ -50,6 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  overflow: scroll;
   //height: 80vh;
   height: calc(100vh - #{$code_search_bar_minHeight + $nav_min_height + $nav_margin_bottom + $nav_border_thickness});
   @media screen and (min-width: $break-medium) {

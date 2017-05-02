@@ -6594,6 +6594,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  overflow: scroll;
   height: calc(100vh - 136px); }
   @media screen and (min-width: 860px) {
     .search-results-wrapper {

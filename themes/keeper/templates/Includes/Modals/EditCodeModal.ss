@@ -7,7 +7,11 @@
             </button>
 
             <div class="modal-body">
-                $EditCodeForm
+                <% if $CurrentUser.ViewSensitive == 1 %>
+                    $EditCodeForm
+                <% else %>
+                    <p>your not trusted to edit code snippets, come back with better permissions</p>
+                <% end_if %>
             </div>
             <div class="clear"></div>
         </div>

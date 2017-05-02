@@ -7,7 +7,12 @@
             </button>
 
             <div class="modal-body">
-                $UploadCodeForm
+                <% if $CurrentUser.ViewSensitive == 1 %>
+                    $UploadCodeForm
+                <% else %>
+                    <p>Sorry your not trusted to not skull fuck my system</p>
+                <% end_if %>
+
             </div>
             <div class="clear"></div>
         </div>
