@@ -24,30 +24,22 @@
 </head>
 <body class="$ClassName">
 
-<div>
-
-</div>
     <% include Nav %>
 
-<div class="container">
     <% if $CurrentMember %>
         $Layout
         $Form
     <% else %>
+    <div class="container">
         <h1>Please login to View Module Resources</h1>
         <p>Visitors you can view the code search page by logging in with the below credentials</p>
-        <p class="visitor-credentials">Email: <span>visitor@keeper.nz</span><br />Password: <span>visit</span></p>
-        <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
+        <p class="visitor-credentials">Email: <span>visitor@keeper.nz</span><br/>Password: <span>visit</span></p>
+        <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i
+                class="fa fa-sign-in"></i></a>
+    </div>
     <% end_if %>
-</div>
 
-
-<% include LoginModal %>
-
-
-<%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"--%>
-        <%--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"--%>
-        <%--crossorigin="anonymous"></script>--%>
+    <% include LoginModal %>
 
 </body>
 </html>
