@@ -34,6 +34,8 @@
         $Form
     <% else %>
     <h1>Please login to View Module Resources</h1>
+    <p>Visitors you can view the code search page by logging in with the below credentials</p>
+    <p>visitor@keeper.nz<br />visit</p>
     <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn">Log - In<i class="fa fa-sign-in"></i></a>
     <% end_if %>
 
