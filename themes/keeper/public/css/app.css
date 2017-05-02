@@ -6339,6 +6339,14 @@ a {
   a:focus {
     outline: none; }
 
+.navbar-default .navbar-nav > li .login-btn.menu-login {
+  color: #66AD28; }
+  .navbar-default .navbar-nav > li .login-btn.menu-login:hover {
+    color: #f0523f; }
+
+.navbar-default .navbar-nav li a {
+  color: #4da7ca; }
+
 .navbar-default .navbar-nav li a {
   color: #4da7ca; }
   .navbar-default .navbar-nav li a:hover {
@@ -6394,7 +6402,8 @@ input {
   z-index: 100;
   position: absolute;
   right: 0;
-  top: 0; }
+  top: 0;
+  margin-top: 0 !important; }
   .close .svg-cross {
     height: 36px;
     padding: 5px;

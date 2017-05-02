@@ -23,6 +23,21 @@
                 <% include AddCodeModal %>
             </ul>
 
+            <ul class="nav navbar-nav login-wrapper">
+                <%--<% if $CurrentMember %>--%>
+                    <%--<li>--%>
+                        <%--<a href="#"></a>--%>
+                    <%--</li>--%>
+                <%--<% end_if %>--%>
+                <li>
+                    <% if $CurrentMember %>
+                        <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn menu-login">Welcome {$CurrentMember.Name}  <i class="fa fa-sign-in"></i></a>
+                    <% else %>
+                        <a href="" data-toggle="modal" data-target="#TronLoginModal" class="login-btn menu-login">Log - In<i class="fa fa-sign-in"></i></a>
+                    <% end_if %>
+                </li>
+            </ul>
+
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
