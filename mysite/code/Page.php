@@ -156,7 +156,7 @@ class Page_Controller extends ContentController
         }
 
         if (isset($_POST['Tags'])) {
-            $Tags = $_POST['Tags'];
+            $Tags = implode(',', $_POST['Tags']);
         }
 
         $code = Code::create();
